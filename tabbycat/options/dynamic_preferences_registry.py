@@ -379,6 +379,19 @@ class ShowUnaccredited(BooleanPreference):
 
 
 @tournament_preferences_registry.register
+class AverageFeedbackScoreCalculation(ChoicePreference):
+    help_text = _("")
+    verbose_name = _("Average feedback score calculation")
+    section = feedback
+    name = 'average_feedback_score_calculation'
+    choices = (
+        ('macro', _("Macro (The average total adjudicator score over averages of all debates the adjudicator had)")),
+        ('micro', _("Micro (The average total adjudicator score over all debates the adjudicator had)")),
+    )
+    default = 'micro'
+
+
+@tournament_preferences_registry.register
 class ScoreReturnLocation(StringPreference):
     help_text = _("The location to return scoresheets to, printed on pre-printed ballots")
     verbose_name = _("Score return location")
