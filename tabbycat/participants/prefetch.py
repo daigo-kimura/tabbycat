@@ -1,4 +1,4 @@
-from django.db.models import Avg, Case, Count, Sum, When
+from django.db.models import Case, Count, Sum, When
 
 from adjallocation.models import DebateAdjudicator
 from adjfeedback.models import AdjudicatorFeedback
