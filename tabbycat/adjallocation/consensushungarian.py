@@ -24,10 +24,11 @@ class ConsensusHungarianAllocator(Allocator):
         self.no_trainees = t.pref('no_trainee_position')
         self.duplicate_allocations = t.pref('duplicate_adjs')
         self.feedback_weight = t.current_round.feedback_weight
+        self.feedback_calc_op = t.pref('average_feedback_score_calculation')
 
     def populate_adj_scores(self, adjudicators):
         for adj in adjudicators:
-            adj._hungarian_score = adj.weighted_score(self.feedback_weight)
+            adj._hungarian_score = adj.weighted_score(self.feedback_weight, self.feedback_calc_op)
 
     def calc_cost(self, debate, adj, adjustment=0, chair=None):
         cost = 0

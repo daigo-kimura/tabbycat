@@ -113,6 +113,41 @@ class Tournament(models.Model):
             speaker_positions = speaker_positions + 1
         return list(range(1, speaker_positions))
 
+    @property
+    def avg_feedback_score_func(self):
+        """Returns a function to calculate an average feedback score"""
+        def macro_avg(feedbacks):
+            avg_by_round = feedbacks.values('round').annotate(avg=models.Avg('score'))
+            logger.info(avg_by_round)
+
+            from collections import defaultdict
+
+            f_count = defaultdict(int)
+            f_score_sum = defaultdict(int)
+            avg_by_round = [f_score_sum[k] / f_count[k] for k in f_count.keys()]
+
+            for f in feedbacks:
+                round = f.round
+                f_count[round] += 1
+                f_score_sum[round] += f.score
+
+            if len(avg_by_round) == 0:
+                return None
+            else:
+                return sum(avg_by_round) / len(avg_by_round)
+
+        def micro_avg(feedbacks):
+            return feedbacks.aggregate(avg=models.Avg('score'))['avg']
+
+        score_op = self.pref('average_feedback_score_calculation')
+
+        if score_op == "macro":
+            return macro_avg
+        elif score_op == "micro":
+            return micro_avg
+        else:
+            raise ValueError("Undefined option: '{}'".format(score_op))
+
     # --------------------------------------------------------------------------
     # Permalinks
     # --------------------------------------------------------------------------

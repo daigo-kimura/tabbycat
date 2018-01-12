@@ -467,8 +467,8 @@ class Adjudicator(Person):
     def region(self):
         return self.institution.region if self.institution else None
 
-    def weighted_score(self, feedback_weight):
-        feedback_score = self._feedback_score()
+    def weighted_score(self, feedback_weight, score_func):
+        feedback_score = self._feedback_score(score_func)
         if feedback_score is None:
             feedback_score = 0
             feedback_weight = 0
@@ -483,33 +483,17 @@ class Adjudicator(Person):
             weight = 1  # For shared ajudicators
         return self.weighted_score(weight)
 
-    def feedback_macro_avg_score(self):
-        from adjallocation.models import DebateAdjudicator
-        from collections import defaultdict
-
-        feedbacks = self.adjudicatorfeedback_set.filter(confirmed=True).exclude(
-            source_adjudicator__type=DebateAdjudicator.TYPE_TRAINEE
-        )
-        f_count = defaultdict(int)
-        f_score_sum = defaultdict(int)
-
-        for f in feedbacks:
-            round = f.round
-            f_count[round] += 1
-            f_score_sum[round] += f.score
-
-        avg_by_round = [f_score_sum[k] / f_count[k] for k in f_count.keys()]
-
-        if len(avg_by_round) == 0:
-            return None
-
-        return sum(avg_by_round) / len(avg_by_round)
-
-    def _feedback_score(self):
+    def _feedback_score(self, score_func):
         try:
             return self._feedback_score_cache
         except AttributeError:
-            self._feedback_score_cache = self.feedback_macro_avg_score()
+            from adjallocation.models import DebateAdjudicator
+
+            feedbacks = self.adjudicatorfeedback_set.filter(confirmed=True).exclude(
+                source_adjudicator__type=DebateAdjudicator.TYPE_TRAINEE
+            )
+            self._feedback_score_cache = score_func(feedbacks)
+
             return self._feedback_score_cache
 
     @property

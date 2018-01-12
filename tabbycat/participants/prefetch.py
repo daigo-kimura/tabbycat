@@ -42,18 +42,16 @@ def populate_feedback_scores(adjudicators):
         confirmed=True
     ).exclude(source_adjudicator__type=DebateAdjudicator.TYPE_TRAINEE)
 
-    # adjs_annotated = Adjudicator.objects.filter(
-    #     id__in=adjs_by_id.keys(),
-    #     adjudicatorfeedback__in=adjfeedbacks
-    # ).annotate(feedback_score_annotation=Avg('adjudicatorfeedback__score'))
-
     adjs_in_the_tournament = Adjudicator.objects.filter(
         id__in=adjs_by_id.keys(),
         adjudicatorfeedback__in=adjfeedbacks
     )
 
+    # Assuming that all adjudicators participate in the same tournament
+    score_func = adjudicators.first().tournament.avg_feedback_score_func
     for adj in adjs_in_the_tournament:
-        adjs_by_id[adj.id]._feedback_score_cache = adj.feedback_macro_avg_score()
+        feedbacks = adjfeedbacks.filter(adjudicator=adj)
+        adjs_by_id[adj.id]._feedback_score_cache = score_func(feedbacks)
 
     for adj in adjudicators:
         if not hasattr(adj, '_feedback_score_cache'):

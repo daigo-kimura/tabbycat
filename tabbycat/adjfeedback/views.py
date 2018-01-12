@@ -38,10 +38,12 @@ logger = logging.getLogger(__name__)
 class GetAdjScores(LoginRequiredMixin, TournamentMixin, JsonDataResponseView):
 
     def get_data(self):
-        feedback_weight = self.get_tournament().current_round.feedback_weight
+        t = self.get_tournament()
+        feedback_weight = t.current_round.feedback_weight
+        score_func = t.avg_feedback_score_func
         data = {}
         for adj in Adjudicator.objects.all():
-            data[adj.id] = adj.weighted_score(feedback_weight)
+            data[adj.id] = adj.weighted_score(feedback_weight, score_func)
         return data
 
 
@@ -69,7 +71,8 @@ class BaseFeedbackOverview(TournamentMixin, VueTableTemplateView):
         t = self.get_tournament()
         adjudicators = self.get_adjudicators()
         weight = t.current_round.feedback_weight
-        scores = [a.weighted_score(weight) for a in adjudicators]
+        score_func = t.avg_feedback_score_func
+        scores = [a.weighted_score(weight, score_func) for a in adjudicators]
 
         kwargs['c_breaking'] = adjudicators.filter(breaking=True).count()
 

@@ -29,7 +29,8 @@ class FeedbackTableBuilder(TabbycatTableBuilder):
 
     def add_weighted_score_columns(self, adjudicators):
         feedback_weight = self.tournament.current_round.feedback_weight
-        scores = {adj: adj.weighted_score(feedback_weight) for adj in adjudicators}
+        score_func = self.tournament.avg_feedback_score_func
+        scores = {adj: adj.weighted_score(feedback_weight, score_func) for adj in adjudicators}
 
         overall_header = {
             'key': 'Score',
