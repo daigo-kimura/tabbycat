@@ -47,7 +47,7 @@ def populate_feedback_scores(adjudicators):
         adjudicatorfeedback__in=adjfeedbacks
     )
 
-    # Assuming that all adjudicators participate in the same tournament
+    # Assumes that all adjudicators participate in the same tournament
     score_func = adjudicators.first().tournament.avg_feedback_score_func
     for adj in adjs_in_the_tournament:
         feedbacks = adjfeedbacks.filter(adjudicator=adj)
