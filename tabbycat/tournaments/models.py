@@ -117,9 +117,6 @@ class Tournament(models.Model):
     def avg_feedback_score_func(self):
         """Returns a function to calculate an average feedback score"""
         def macro_avg(feedbacks):
-            avg_by_round = feedbacks.values('round').annotate(avg=models.Avg('score'))
-            logger.info(avg_by_round)
-
             from collections import defaultdict
 
             f_count = defaultdict(int)
