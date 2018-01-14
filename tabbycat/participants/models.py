@@ -531,7 +531,8 @@ class Adjudicator(Person):
     def serialize(self, round):
         adj = {'id': self.id, 'name': self.name, 'gender': self.gender, 'locked': False}
         adj['conflicts'] = {'clashes': [], 'histories': []}
-        adj['score'] = "{0:0.1f}".format(self.weighted_score(round.feedback_weight))
+        score_func = self.tournament.avg_feedback_score_func
+        adj['score'] = "{0:0.1f}".format(self.weighted_score(round.feedback_weight, score_func))
         adj['region'] = self.region.serialize if self.region else None
         adj['institution'] = self.institution.serialize if self.institution else None
         adj['highlights'] = {'region': False, 'gender': False, 'category': False}
