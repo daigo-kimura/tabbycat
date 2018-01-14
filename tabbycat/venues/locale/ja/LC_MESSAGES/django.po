@@ -12,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,49 +20,50 @@ msgstr ""
 
 #: venues/apps.py:7
 msgid "Venues"
-msgstr ""
+msgstr "部屋"
 
 #: venues/models.py:10 venues/models.py:74
 msgid "name"
-msgstr ""
+msgstr "名前"
 
 #: venues/models.py:12 venues/models.py:128
 msgid "priority"
-msgstr ""
+msgstr "優先度"
 
 #: venues/models.py:13
 msgid ""
 "Venues with a higher priority number will be preferred when allocating "
 "venues to debates"
-msgstr ""
+msgstr "ディベートを行う部屋を決める際、"
+"優先度が高い部屋が選ばれやすくなります"
 
 #: venues/models.py:16
 msgid "tournament"
-msgstr ""
+msgstr "大会"
 
 #: venues/models.py:17
 msgid "Venues not assigned to any tournament can be shared between tournaments"
-msgstr ""
+msgstr "どの大会にも割り当てられていない部屋は、複数の大会で共有して使用されます"
 
 #: venues/models.py:24
 msgid "venue"
-msgstr ""
+msgstr "部屋"
 
 #: venues/models.py:25 venues/models.py:84
 msgid "venues"
-msgstr ""
+msgstr "部屋"
 
 #: venues/models.py:69
 msgid "Don't display in venue name"
-msgstr ""
+msgstr "表示しない"
 
 #: venues/models.py:70
 msgid "Display as prefix"
-msgstr ""
+msgstr "接頭で表示"
 
 #: venues/models.py:71
 msgid "Display as suffix"
-msgstr ""
+msgstr "接頭で表示"
 
 #: venues/models.py:75
 msgid ""
@@ -70,10 +71,13 @@ msgid ""
 "\". This name is shown when the category is prefixed or suffixed to a venue "
 "name in the draw, e.g., \"Purple – G05\"."
 msgstr ""
+"カテゴリ名（例：「紫」、「バリアフリー」、「タブルームに近い」）。"
+"カテゴリを接頭もしくは接尾で部屋の名前と共に表示するとき"
+"このカテゴリ名が用いられます（例：紫 - G05）。"
 
 #: venues/models.py:79
 msgid "description"
-msgstr ""
+msgstr "詳細"
 
 #: venues/models.py:80
 msgid ""
@@ -81,61 +85,67 @@ msgid ""
 "\"is close to the briefing hall\". This description follows \"This venue\" "
 "when shown in tooltips, e.g., \"This venue is close to the briefing hall.\"."
 msgstr ""
+"部屋名の直後に付与されることで、文を形成するように記入"
+"（例：「は階段なしでアクセスできます」、「はタブルームに近いです」）。"
+"ツールチップで使用される際、「この部屋」の直後に付与されます。"
+"（例：「この部屋はブリーフィングルームに近いです。」）。"
 
 #: venues/models.py:88
 msgid "display in venue name"
-msgstr ""
+msgstr "カテゴリを部屋名と共に表示"
 
 #: venues/models.py:89
 msgid "Prefix: \"Purple – G05\", Suffix: \"G05 – Purple\""
-msgstr ""
+msgstr "接尾：「紫 - G05」、接尾：「G05 - 紫」"
 
 #: venues/models.py:91
 msgid "display in public tooltip"
-msgstr ""
+msgstr "公開ページのツールチップで表示"
 
 #: venues/models.py:92
 msgid ""
 "Displays the description in the tooltip for the venue on public pages. The "
 "description, if not blank, will always show on admin pages."
 msgstr ""
+"公開ページでツールチップの中にカテゴリの詳細を表示する。"
+"また、詳細が空白出ない限り、管理者のページでは常に表示される。"
 
 #: venues/models.py:96
 msgid "venue category"
-msgstr ""
+msgstr "部屋のカテゴリ"
 
 #: venues/models.py:97
 msgid "venue categories"
-msgstr ""
+msgstr "部屋のカテゴリ"
 
 #: venues/models.py:127
 msgid "category"
-msgstr ""
+msgstr "カテゴリ"
 
 #: venues/models.py:131
 msgid "subject content type"
-msgstr ""
+msgstr "制約対象"
 
 #: venues/models.py:134
 msgid "subject ID"
-msgstr ""
+msgstr "対象ＩＤ"
 
 #: venues/models.py:140
 msgid "venue constraint"
-msgstr ""
+msgstr "部屋の制約"
 
 #: venues/models.py:141
 msgid "venue constraints"
-msgstr ""
+msgstr "部屋の制約"
 
 #: venues/templates/venue_categories_edit.html:4
 #: venues/templates/venue_categories_edit.html:5
 msgid "Venue Categories"
-msgstr ""
+msgstr "部屋のカテゴリ"
 
 #: venues/templates/venue_categories_edit.html:7
 msgid "Save Venue Categories"
-msgstr ""
+msgstr "部屋のカテゴリを保存"
 
 #: venues/templates/venue_categories_edit.html:11
 msgid ""
@@ -145,6 +155,11 @@ msgid ""
 "adjudicators or institutions to be put in a venue in a particular category.</"
 "li> </ul>"
 msgstr ""
+"部屋のカテゴリには以下の利点があります。<ul>"
+"<li>建物の種別等をカテゴリにし対戦表に表示することで、"
+"参加者が部屋の位置を把握しやすい</li>"
+"<li>特定の部屋でのみ試合に参加できる参加者がいる際、"
+"その部屋の持つ条件を把握しやすい</li> </ul>"
 
 #: venues/templates/venue_categories_edit.html:20
 #, python-format
@@ -152,11 +167,13 @@ msgid ""
 "If you want to delete venue categories, use the <a href=\"%(edit_db_url)s\" "
 "class=\"alert-link\">Edit Database</a> area."
 msgstr ""
+"部屋のカテゴリを削除したい場合、<a href=\"%(edit_db_url)s\" "
+"class=\"alert-link\">データベースの編集</a>へ."
 
 #: venues/templates/venue_constraints_edit.html:4
 #: venues/templates/venue_constraints_edit.html:5
 msgid "Venue Constraints"
-msgstr ""
+msgstr "部屋の制約"
 
 #: venues/templates/venue_constraints_edit.html:9
 msgid ""
@@ -167,19 +184,25 @@ msgid ""
 "can also use the priority field to specify \"lower-preference\" constraints, "
 "which are taken if a higher-priority constraint couldn't be met."
 msgstr ""
+"部屋の制約によって、特定のカテゴリに属する部屋でのみ、"
+"参加者にディベートを行わせることが出来ます。ここでは「特定のチーム」、"
+"「特定のジャッジ」もしくは「特定の大学に属する全チーム（ジャッジは対象外）」が"
+"制約の対象となります。同時に複数の制約を適用出来ない場合、"
+"優先度に基づいて適用する制約を決めます（高い方を優先）。"
+"優先度の低い制約は優先度の高いものが適用されない場合に適用されます。"
 
 #: venues/templates/venue_constraints_edit.html:41
 msgid "Save Venue Constraints"
-msgstr ""
+msgstr "部屋の制約を保存"
 
 #: venues/templates/venue_constraints_edit.html:44
 msgid "Save and Add More"
-msgstr ""
+msgstr "保存して別の制約を追加"
 
 #: venues/utils.py:38 venues/utils.py:50
 #, python-format
 msgid "Venue constraint of %(name)s met (%(category)s)"
-msgstr ""
+msgstr "部屋の制約「%(name)」を適用"
 
 #: venues/utils.py:39 venues/utils.py:51
 #, python-format
@@ -191,28 +214,29 @@ msgstr ""
 msgid ""
 "Venue constraint of %(team)s met (%(category)s, via institution "
 "%(institution)s)"
-msgstr ""
+msgstr "%(team)s"
 
 #: venues/utils.py:45
 #, python-format
 msgid ""
 "Venue does not meet any constraint of institution %(institution)s (%(team)s)"
 msgstr ""
+""
 
 #: venues/views.py:100
 #, python-format
 msgid "Saved venue category: %(list)s"
 msgid_plural "Saved venue categories: %(list)s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "保存された部屋のカテゴリ：%(list)s"
+msgstr[1] "保存された部屋のカテゴリ：%(list)s"
 
 #: venues/views.py:106
 msgid "No changes were made to the venue categories."
-msgstr ""
+msgstr "部屋のカテゴリに対する変更はありません"
 
 #: venues/views.py:176
 #, python-format
 msgid "Saved %(count)d venue constraint."
 msgid_plural "Saved %(count)d venue constraints."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(count)dつの部屋のカテゴリを保存しました"
+msgstr[1] "%(count)dつの部屋のカテゴリを保存しました"
