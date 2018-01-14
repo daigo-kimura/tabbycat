@@ -16,37 +16,37 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=1; plural=(n > 1);\n"
 #: options/dynamic_preferences_registry.py:16
 #: options/templates/preferences_index.html:15
 msgid "Score Rules"
-msgstr ""
+msgstr "スコア計算"
 
 #: options/dynamic_preferences_registry.py:22
 msgid "Minimum allowed score for substantive speeches"
-msgstr ""
+msgstr "サブスタンティブスピーチに対するスコアの最小値"
 
 #: options/dynamic_preferences_registry.py:25
 msgid "Minimum speaker score"
-msgstr ""
+msgstr "スピーカースコアの最小値"
 
 #: options/dynamic_preferences_registry.py:31
 msgid "Maximum speaker score"
-msgstr ""
+msgstr "スピーカースコアの最大値"
 
 #: options/dynamic_preferences_registry.py:32
 msgid "Maximum allowed score for substantive speeches"
-msgstr ""
+msgstr "サブスタンティブスピーチに対するスコアの最大値"
 
 #: options/dynamic_preferences_registry.py:40
 msgid "Speaker score step"
-msgstr ""
+msgstr "スピーカースコアの刻み"
 
 #: options/dynamic_preferences_registry.py:41
 msgid ""
 "Score steps allowed for substantive speeches, e.g. full points (1) or half "
 "points (0.5)"
-msgstr ""
+msgstr "サブスタンティブスピーチに対するスコアの刻み"
 
 #: options/dynamic_preferences_registry.py:49
 msgid ""
@@ -55,119 +55,135 @@ msgstr ""
 
 #: options/dynamic_preferences_registry.py:50
 msgid "Maximum margin"
-msgstr ""
+msgstr "チームマージンの最大値"
 
 #: options/dynamic_preferences_registry.py:59
 msgid "Minimum allowed score for reply speeches"
-msgstr ""
+msgstr "リブライスピーチに対するスコアの最小値"
 
 #: options/dynamic_preferences_registry.py:60
 msgid "Minimum reply score"
-msgstr ""
+msgstr "リブライスコアの最小値"
 
 #: options/dynamic_preferences_registry.py:68
 msgid "Maximum allowed score for reply speeches"
-msgstr ""
+msgstr "リブライスピーチに対するスコアの最大値"
 
 #: options/dynamic_preferences_registry.py:69
 msgid "Maximum reply score"
-msgstr ""
+msgstr "リブライスコアの最大値"
 
 #: options/dynamic_preferences_registry.py:77
 msgid ""
 "Score steps allowed for reply speeches, e.g. full points (1) or half points "
 "(0.5)"
-msgstr ""
+msgstr "リブライスピーチに対するスコアの刻み"
 
 #: options/dynamic_preferences_registry.py:78
 msgid "Reply score step"
-msgstr ""
+msgstr "リプライスコアの刻み"
 
 #: options/dynamic_preferences_registry.py:86
 msgid "If checked, a team's winning margin includes dissenting adjudicators"
 msgstr ""
+"チームマージンの計算の際、"
+"マイナーボートを行ったジャッジのスコアを考慮する"
 
 #: options/dynamic_preferences_registry.py:87
 msgid "Margin includes dissenters"
-msgstr ""
+msgstr "マイナーのジャッジをマージンに含む"
 
 #: options/dynamic_preferences_registry.py:93
 #: options/templates/preferences_index.html:20
 msgid "Draw Rules"
-msgstr ""
+msgstr "対戦表"
 
 #: options/dynamic_preferences_registry.py:99
 msgid ""
 "The auto-allocator will only take adjudicators at or above this score as "
 "voting panellists"
 msgstr ""
+"ジャッジの自動アロケーションの際、"
+"このスコア以上のジャッジをチェアもしくはパネリストとして配置する"
 
 #: options/dynamic_preferences_registry.py:100
 msgid "Minimum adjudicator score to vote"
-msgstr ""
+msgstr "チェア／パネリストになれるジャッジのスコア下限"
 
 #: options/dynamic_preferences_registry.py:108
 msgid "Penalty applied by auto-allocator for adjudicator-team conflict"
 msgstr ""
+"ジャッジ・チーム間のコンフリクトペナルティ"
+"（ジャッジの自動アロケーションで考慮）"
 
 #: options/dynamic_preferences_registry.py:109
 msgid "Adjudicator-team conflict penalty"
-msgstr ""
+msgstr "ジャッジ・チーム間のコンフリクトペナルティ"
 
 #: options/dynamic_preferences_registry.py:117
 msgid "Penalty applied by auto-allocator for adjudicator-team history"
 msgstr ""
+"ジャッジの自動アロケーションの際に考慮される、"
+"既にジャッジしたチームに関するペナルティ"
+"（ジャッジの自動アロケーションで考慮）"
 
 #: options/dynamic_preferences_registry.py:118
 msgid "Adjudicator-team history penalty"
-msgstr ""
+msgstr "既にジャッジしたチームに関するペナルティ"
 
 #: options/dynamic_preferences_registry.py:126
 msgid ""
 "Penalty applied by conflict avoidance method for teams seeing their own "
 "institution"
 msgstr ""
+"所属大学が同じチーム同士に関するペナルティ"
+"（対戦表自動作成で考慮）"
 
 #: options/dynamic_preferences_registry.py:127
 msgid "Team institution penalty"
-msgstr ""
+msgstr "大学に関するペナルティ"
 
 #: options/dynamic_preferences_registry.py:135
 msgid ""
 "Penalty applied by conflict avoidance method for teams seeing each other "
 "twice or more"
 msgstr ""
+"以前の試合で既に対戦したチーム同士に関するペナルティ"
+"（対戦表自動作成で考慮）"
 
 #: options/dynamic_preferences_registry.py:136
 msgid "Team history penalty"
 msgstr ""
+"対戦済チームに関するペナルティ"
 
 #: options/dynamic_preferences_registry.py:144
 msgid ""
 "If checked, the draw will try to avoid pairing teams against their own "
 "institution"
 msgstr ""
+"所属大学の同じチーム同士はなるべく対戦しない"
 
 #: options/dynamic_preferences_registry.py:145
 msgid "Avoid same institution"
-msgstr ""
+msgstr "同じ大学同士は対戦しない"
 
 #: options/dynamic_preferences_registry.py:153
 msgid ""
 "If checked, the draw will try to avoid having teams see each other twice"
 msgstr ""
+"以前の試合で既に対戦したチーム同士はなるべく対戦しない"
 
 #: options/dynamic_preferences_registry.py:154
 msgid "Avoid team history"
-msgstr ""
+msgstr "対戦済チーム同士は再対戦しない"
 
 #: options/dynamic_preferences_registry.py:162
 msgid "How odd brackets are resolved (see documentation for further details)"
-msgstr ""
+msgstr "奇数ブラケットの解消を行う方法（詳しくはドキュメントを参照）"
 
 #: options/dynamic_preferences_registry.py:163
 msgid "Odd bracket resolution method"
-msgstr ""
+msgstr "奇数ブラケット解消アルゴリズム"
 
 #: options/dynamic_preferences_registry.py:167
 msgid "Pull up from top"
@@ -202,10 +218,11 @@ msgid ""
 "How affirmative/negative positions are assigned (see documentation for "
 "further details)"
 msgstr ""
+"肯定側、否定側の割り当て方法（詳しくはドキュメントを参照）"
 
 #: options/dynamic_preferences_registry.py:181
 msgid "Side allocations method"
-msgstr ""
+msgstr "サイドの決定方法"
 
 #: options/dynamic_preferences_registry.py:185
 #: options/dynamic_preferences_registry.py:202
@@ -222,7 +239,7 @@ msgstr ""
 
 #: options/dynamic_preferences_registry.py:188
 msgid "Manually enter from ballot"
-msgstr ""
+msgstr "スコアシートを元に手動で割り当て"
 
 #: options/dynamic_preferences_registry.py:195
 msgid ""
@@ -232,7 +249,7 @@ msgstr ""
 
 #: options/dynamic_preferences_registry.py:196
 msgid "Pairing method"
-msgstr ""
+msgstr "対戦相手決定方法"
 
 #: options/dynamic_preferences_registry.py:200
 msgid "Slide"
@@ -255,10 +272,12 @@ msgid ""
 "Method used to try to avoid teams facing each other multiple times or their "
 "own institution (see documentation for further details)"
 msgstr ""
+"既に対戦済みもしくは所属大学が同じチームを避けて対戦表を作成する方法"
+"（詳しくはドキュメントを参照）"
 
 #: options/dynamic_preferences_registry.py:212
 msgid "Conflict avoidance method"
-msgstr ""
+msgstr "コンフリクトの回避方法"
 
 #: options/dynamic_preferences_registry.py:216
 msgid "Off"
@@ -289,6 +308,7 @@ msgstr ""
 msgid ""
 "In BP, which position cost function to use (see documentation for details)"
 msgstr ""
+""
 
 #: options/dynamic_preferences_registry.py:238
 msgid "BP position cost"
@@ -347,319 +367,329 @@ msgstr ""
 
 #: options/dynamic_preferences_registry.py:289
 msgid "Automatically make all adjudicators available for all rounds"
-msgstr ""
+msgstr "自動的に全てのジャッジはチェックイン済みとする"
 
 #: options/dynamic_preferences_registry.py:290
 msgid "Skip adjudicator check-ins"
-msgstr ""
+msgstr "ジャッジのチェックインを確認しない"
 
 #: options/dynamic_preferences_registry.py:298
 msgid "Hide panellist positions in the UI (and don't allocate them)"
-msgstr ""
+msgstr "この大会では誰もパネリストにならない"
 
 #: options/dynamic_preferences_registry.py:299
 msgid "No panellist adjudicators"
-msgstr ""
+msgstr "パネリストなし"
 
 #: options/dynamic_preferences_registry.py:307
 msgid "Hide trainee positions in the UI (and don't allocate them)"
-msgstr ""
+msgstr "この大会では誰もトレイニーにならない"
 
 #: options/dynamic_preferences_registry.py:308
 msgid "No trainee adjudicators"
-msgstr ""
+msgstr "トレイニーなし"
 
 #: options/dynamic_preferences_registry.py:314
 #: options/templates/preferences_index.html:35
 msgid "Feedback"
-msgstr ""
+msgstr "フィードバック"
 
 #: options/dynamic_preferences_registry.py:320
 msgid "Minimum possible adjudicator score that can be given"
-msgstr ""
+msgstr "ジャッジに対するスコアの最小値"
 
 #: options/dynamic_preferences_registry.py:321
 msgid "Minimum adjudicator score"
-msgstr ""
+msgstr "ジャッジスコアの最小値"
 
 #: options/dynamic_preferences_registry.py:329
 msgid "Maximum possible adjudicator score that can be given"
-msgstr ""
+msgstr "ジャッジに対するスコアの最大値"
 
 #: options/dynamic_preferences_registry.py:330
 msgid "Maximum adjudicator score"
-msgstr ""
+msgstr "ジャッジスコアの最大値"
 
 #: options/dynamic_preferences_registry.py:338
 msgid ""
 "Used to inform available choices in the feedback forms for adjudicators "
 "(both online and printed) and feedback progress"
 msgstr ""
+"エバリュエーションシート、オンラインフィードバックフォーム"
+"もしくはフィードバック提出状況ページでの被評価者の選択肢"
 
 #: options/dynamic_preferences_registry.py:339
 msgid "Allow and expect feedback to be submitted by"
-msgstr ""
+msgstr "評価者、被評価者（ジャッジ間）"
 
 #: options/dynamic_preferences_registry.py:343
 msgid "Chairs on panellists and trainees"
-msgstr ""
+msgstr "チェアがパネリストとトレイニーを評価"
 
 #: options/dynamic_preferences_registry.py:344
 msgid "Panellists on chairs, chairs on panellists and trainees"
-msgstr ""
+msgstr "チェアがパネリストとトレイニーを、パネリストがチェアを評価"
 
 #: options/dynamic_preferences_registry.py:345
 msgid "All adjudicators (including trainees) on each other"
-msgstr ""
+msgstr "トレイニーを含めた全てのジャッジがお互いに評価"
 
 #: options/dynamic_preferences_registry.py:352
 msgid "Expect feedback to be submitted by teams on"
-msgstr ""
+msgstr "評価者、被評価者（ジャッジ・チーム間）"
 
 #: options/dynamic_preferences_registry.py:353
 msgid ""
 "Used to inform available choices in the feedback forms for teams (both "
 "online and printed) and feedback progress; this option is used by, e.g., UADC"
 msgstr ""
+"エバリュエーションシート、オンラインフィードバックフォーム"
+"もしくはフィードバック提出状況ページでの被評価者の選択肢"
 
 #: options/dynamic_preferences_registry.py:357
 msgid ""
 "Orallist only (voting panellists permitted, with prompts to select orallist)"
-msgstr ""
+msgstr "R4Dを説明したジャッジのみ（チェアがマイナーな場合、パネリストの中から選択）"
 
 #: options/dynamic_preferences_registry.py:358
 msgid "All adjudicators in their panels (including trainees)"
-msgstr ""
+msgstr "トレイニーを含めた全てのジャッジ"
 
 #: options/dynamic_preferences_registry.py:365
 msgid "Show unexpected feedback submissions in participants pages"
-msgstr ""
+msgstr "参加者ページで予期しないフィードバックを表示"
 
 #: options/dynamic_preferences_registry.py:366
 msgid ""
 "Displays unexpected feedback with a question mark symbol; only relevant if "
 "public participants and feedback progress are both enabled"
 msgstr ""
+"クエスチョンマークで予期しないフィードバックを表示する"
+"（参加者ページとフィードバック提出状況を公開している場合）"
 
 #: options/dynamic_preferences_registry.py:374
 msgid "Show if an adjudicator is a trainee (unaccredited)"
-msgstr ""
+msgstr "どのジャッジがトレイニーか分かるようにする"
 
 #: options/dynamic_preferences_registry.py:375
 msgid "Show unaccredited"
-msgstr ""
+msgstr "トレイニーの表示"
 
 #: options/dynamic_preferences_registry.py:383
 msgid "The location to return scoresheets to, printed on pre-printed ballots"
-msgstr ""
+msgstr "スコアシートに印字される"
 
 #: options/dynamic_preferences_registry.py:384
 msgid "Score return location"
-msgstr ""
+msgstr "スコアシート提出先"
 
 #: options/dynamic_preferences_registry.py:392
 msgid ""
 "The location to return feedback to, printed on pre-printed feedback forms"
-msgstr ""
+msgstr "エバリュエーションシートに印字される"
 
 #: options/dynamic_preferences_registry.py:393
 msgid "Feedback return location"
-msgstr ""
+msgstr "エバリュエーションシート提出先"
 
 #: options/dynamic_preferences_registry.py:401
 msgid "Any explanatory text needed to introduce the feedback form"
-msgstr ""
+msgstr "エバリュエーションシートの冒頭に説明文が必要な場合、ここに記入"
 
 #: options/dynamic_preferences_registry.py:402
 msgid "Feedback introduction/explanation"
-msgstr ""
+msgstr "エバリュエーションシートの説明文"
 
 #: options/dynamic_preferences_registry.py:410
 #: options/templates/preferences_index.html:25
 msgid "Debate Rules"
-msgstr ""
+msgstr "ディベートのルール"
 
 #: options/dynamic_preferences_registry.py:416
 msgid "Two-team format (e.g. Australs, WSDC) or British Parliamentary"
-msgstr ""
+msgstr "1対1（例：Asian, NA）もしくはBP"
 
 #: options/dynamic_preferences_registry.py:417
 msgid "Teams in debate"
-msgstr ""
+msgstr "ディベートの形式"
 
 #: options/dynamic_preferences_registry.py:421
 msgid "Two-team format"
-msgstr ""
+msgstr "1対1"
 
 #: options/dynamic_preferences_registry.py:422
 msgid "British Parliamentary (four teams)"
-msgstr ""
+msgstr "BP（4チーム）"
 
 #: options/dynamic_preferences_registry.py:429
 msgid ""
 "Whether panels submit a ballot each or a single ballot for the debate. Note: "
 "BP must use one per debate."
 msgstr ""
+"パネリストもスコアシートを提出するかどうか"
+"（BPでは「1つのディベートにつき1枚」を選択して下さい）"
 
 #: options/dynamic_preferences_registry.py:430
 msgid "Ballots per debate"
-msgstr ""
+msgstr "スコアシートの枚数"
 
 #: options/dynamic_preferences_registry.py:434
 msgid "One ballot per voting adjudicator"
-msgstr ""
+msgstr "チェアもしくはパネリスト1人につき1枚"
 
 #: options/dynamic_preferences_registry.py:435
 msgid "Consensus ballot (one ballot per debate)"
-msgstr ""
+msgstr "1つのディベートにつき1枚"
 
 #: options/dynamic_preferences_registry.py:442
 msgid "How many substantive speakers on a team"
-msgstr ""
+msgstr "サブスタンティブスピーカーの人数"
 
 #: options/dynamic_preferences_registry.py:443
 msgid "Substantive speakers"
-msgstr ""
+msgstr "サブスタンティブスピーカー"
 
 #: options/dynamic_preferences_registry.py:451
 msgid "What to call the teams"
-msgstr ""
+msgstr "コールする際の各サイドの呼称"
 
 #: options/dynamic_preferences_registry.py:452
 msgid "Side names"
-msgstr ""
+msgstr "サイドの呼称"
 
 #: options/dynamic_preferences_registry.py:461
 msgid "Whether this style features scored reply speeches"
-msgstr ""
+msgstr "リプライスピーチを採点"
 
 #: options/dynamic_preferences_registry.py:462
 msgid "Reply scores"
-msgstr ""
+msgstr "リプライスピーチの採点"
 
 #: options/dynamic_preferences_registry.py:470
 msgid "Enables the motion veto field on ballots, to track veto statistics"
-msgstr ""
+msgstr "統計情報収集のため、スコアシートにビートしたモーションを記入させる"
 
 #: options/dynamic_preferences_registry.py:471
 msgid "Motion vetoes"
-msgstr ""
+msgstr "モーションのビート"
 
 #: options/dynamic_preferences_registry.py:478
 #: options/templates/preferences_index.html:30
 msgid "Standings"
-msgstr ""
+msgstr "ランキング"
 
 #: options/dynamic_preferences_registry.py:484
 msgid ""
 "The number of debates a speaker can miss and still be on the speaker tab"
 msgstr ""
+"ディベーターが欠席してもよい回数の上限"
+"（上限を超えた場合、ランキングに表示されない）"
 
 #: options/dynamic_preferences_registry.py:485
 msgid "Debates missable for standings eligibility"
-msgstr ""
+msgstr "欠席可能回数"
 
 #: options/dynamic_preferences_registry.py:493
 msgid "How speakers are ranked on the speaker tab"
-msgstr ""
+msgstr "スピーカータブでスピーカーの順位を決定する方法"
 
 #: options/dynamic_preferences_registry.py:494
 msgid "Rank speakers by"
-msgstr ""
+msgstr "スピーカーの順位決定方法"
 
 #: options/dynamic_preferences_registry.py:498
 msgid "Average"
-msgstr ""
+msgstr "平均"
 
 #: options/dynamic_preferences_registry.py:499
 msgid "Total"
-msgstr ""
+msgstr "合計"
 
 #: options/dynamic_preferences_registry.py:506
 msgid "Metrics to use to rank teams (see documentation for further details)"
-msgstr ""
+msgstr "チームの順位を決定する指標（詳しくはドキュメントを参照）"
 
 #: options/dynamic_preferences_registry.py:507
 msgid "Team standings precedence"
-msgstr ""
+msgstr "チーム順位付け指標の優先順位"
 
 #: options/dynamic_preferences_registry.py:523
 #, python-format
 msgid "The following metrics can't be listed twice: %(duplicates)s"
-msgstr ""
+msgstr "2回使用されている指標があります: %(duplicates)s"
 
 #: options/dynamic_preferences_registry.py:529
 msgid "Metrics not used to rank teams"
-msgstr ""
+msgstr "タブに表示するのみで、チームの順位決定には用いられない"
 
 #: options/dynamic_preferences_registry.py:530
 msgid "Team standings extra metrics"
-msgstr ""
+msgstr "追加のチーム順位付け指標"
 
 #: options/dynamic_preferences_registry.py:539
 #: options/templates/preferences_index.html:46
 msgid "Tab Release"
-msgstr ""
+msgstr "タブリリース"
 
 #: options/dynamic_preferences_registry.py:545
 msgid ""
 "Enables public display of the team tab. Intended for use after the "
 "tournament."
-msgstr ""
+msgstr "チームタブを誰でも閲覧可能にする（大会後の使用を想定）"
 
 #: options/dynamic_preferences_registry.py:546
 msgid "Release team tab to public"
-msgstr ""
+msgstr "チームタブの公開"
 
 #: options/dynamic_preferences_registry.py:554
 msgid ""
 "Only show scores for the top X teams in the public tab (set to 0 to show all "
 "teams)."
-msgstr ""
+msgstr "上位Xチームまでのタブのみを公開（0で全チーム）"
 
 #: options/dynamic_preferences_registry.py:555
 msgid "Top teams cutoff"
-msgstr ""
+msgstr "チーム公開上限"
 
 #: options/dynamic_preferences_registry.py:563
 msgid ""
 "Enables public display of the speaker tab. Intended for use after the "
 "tournament."
-msgstr ""
+msgstr "スピーカータブを誰でも閲覧可能にする（大会後の使用を想定）"
 
 #: options/dynamic_preferences_registry.py:564
 msgid "Release speaker tab to public"
-msgstr ""
+msgstr "スピーカータブを公開"
 
 #: options/dynamic_preferences_registry.py:572
 msgid ""
 "Only show scores for the top X speakers in the public tab (set to 0 to show "
 "all speakers)."
-msgstr ""
+msgstr "上位X人のスピーカーのタブのみを公開（0で全員）"
 
 #: options/dynamic_preferences_registry.py:573
 msgid "Top speakers cutoff"
-msgstr ""
+msgstr "スピーカー公開上限"
 
 #: options/dynamic_preferences_registry.py:581
 msgid ""
 "Enables public display of the replies tab. Intended for use after the "
 "tournament."
-msgstr ""
+msgstr "リプライタブを誰でも閲覧可能にする（大会後の使用を想定）"
 
 #: options/dynamic_preferences_registry.py:582
 msgid "Release replies tab to public"
-msgstr ""
+msgstr "リプライタブを公開"
 
 #: options/dynamic_preferences_registry.py:590
 msgid ""
 "Only show scores for the top X repliers in the public tab (set to 0 to show "
 "all repliers)."
-msgstr ""
+msgstr "上位X人のリプライスピーカーのタブのみを公開（0で全員）"
 
 #: options/dynamic_preferences_registry.py:591
 msgid "Top replies cutoff"
-msgstr ""
+msgstr "リプライの公開上限"
 
 #: options/dynamic_preferences_registry.py:608
 msgid ""
@@ -667,131 +697,142 @@ msgid ""
 "This includes all motions — whether they have been marked as released or "
 "not. Intended for use after the tournament."
 msgstr ""
+"リリースされなかったモーションを含め、"
+"各モーションでの勝敗、モーション選択の情報を誰でも閲覧可能にする"
+"（大会後の使用を想定）"
 
 #: options/dynamic_preferences_registry.py:611
 msgid "Release motions tab to public"
-msgstr ""
+msgstr "モーションを公開"
 
 #: options/dynamic_preferences_registry.py:619
 msgid "Enables public display of the feedback scores of all adjudicators"
-msgstr ""
+msgstr "ジャッジ全員のフィードバックスコアを公開する"
 
 #: options/dynamic_preferences_registry.py:620
 msgid "Release adjudicator tab to public"
-msgstr ""
+msgstr "ジャッジタブを公開"
 
 #: options/dynamic_preferences_registry.py:628
 msgid "What (if released) the adjudicator tab shows"
-msgstr ""
+msgstr "ジャッジタブに公開される情報"
 
 #: options/dynamic_preferences_registry.py:629
 msgid "Adjudicator tab displays"
-msgstr ""
+msgstr "ジャッジタブ"
 
 #: options/dynamic_preferences_registry.py:633
 msgid "Only shows test score"
-msgstr ""
+msgstr "ジャッジテストのスコアのみ"
 
 #: options/dynamic_preferences_registry.py:634
 msgid "Only shows final score"
-msgstr ""
+msgstr "最終的なスコアのみ"
 
 #: options/dynamic_preferences_registry.py:635
 msgid "Shows test, final, and per-round scores"
-msgstr ""
+msgstr "ジャッジテスト、ラウンドごとのスコア、最終的なスコア"
 
 #: options/dynamic_preferences_registry.py:642
 msgid ""
 "Enables public display of every adjudicator's ballot. Intended for use after "
 "the tournament."
 msgstr ""
+"スコアシートを誰でも閲覧可能にする"
+"（大会後の使用を想定）"
 
 #: options/dynamic_preferences_registry.py:643
 msgid "Release ballots to public"
-msgstr ""
+msgstr "スコアシートの公開"
 
 #: options/dynamic_preferences_registry.py:651
 msgid ""
 "This releases all the results for all rounds (including silent and break "
 "rounds). Do so only after the tournament is finished!"
 msgstr ""
+"大会後にサイレント、ブレイクラウンドを含めた全ての試合結果を"
+"誰でも閲覧可能にする"
 
 #: options/dynamic_preferences_registry.py:652
 msgid "Release all round results to public"
-msgstr ""
+msgstr "全ての試合結果を公開"
 
 #: options/dynamic_preferences_registry.py:659
 #: options/templates/preferences_index.html:51
 msgid "Data Entry"
-msgstr ""
+msgstr "データ入力"
 
 #: options/dynamic_preferences_registry.py:665
 msgid "Whether adjudicators can submit ballots themselves, and how they do so"
-msgstr ""
+msgstr "ジャッジにオンラインでスコアシートを入力させる方法"
 
 #: options/dynamic_preferences_registry.py:666
 msgid "Ballot submissions from adjudicators"
-msgstr ""
+msgstr "ジャッジによるスコアシート入力"
 
 #: options/dynamic_preferences_registry.py:670
 #: options/dynamic_preferences_registry.py:684
 msgid "Disabled (tab staff only)"
-msgstr ""
+msgstr "不可（大会運営者のみがスコアを入力）"
 
 #: options/dynamic_preferences_registry.py:671
 #: options/dynamic_preferences_registry.py:685
 msgid "Use private URLs"
-msgstr ""
+msgstr "プライベートURLを使用"
 
 #: options/dynamic_preferences_registry.py:672
 #: options/dynamic_preferences_registry.py:686
 msgid "Use publicly accessible form"
-msgstr ""
+msgstr "公開の入力フォームを使用"
 
 #: options/dynamic_preferences_registry.py:679
 msgid "Whether participants can submit feedback themselves, and how they do so"
-msgstr ""
+msgstr "大会参加者にオンラインでエバリュエーションシートを入力させる方法"
 
 #: options/dynamic_preferences_registry.py:680
 msgid "Feedback submissions from participants"
-msgstr ""
+msgstr "大会参加者のエバリュエーションシート入力"
 
 #: options/dynamic_preferences_registry.py:693
 msgid ""
 "If checked, users must enter a password when submitting public feedback and "
 "ballots"
 msgstr ""
+"公開の入力フォームでの提出時にパスワードを入力させる"
 
 #: options/dynamic_preferences_registry.py:694
 msgid "Require password for submission"
-msgstr ""
+msgstr "提出時にパスワードを要求"
 
 #: options/dynamic_preferences_registry.py:702
 msgid ""
 "Value of the password required for public submissions, if passwords are "
 "required"
 msgstr ""
+"公開の入力フォームでの提出時に入力させるパスワード"
+"（「提出時にパスワードを要求」が有効な場合のみ）"
 
 #: options/dynamic_preferences_registry.py:703
 msgid "Password for public submission"
-msgstr ""
+msgstr "公開の入力フォームのパスワード"
 
 #: options/dynamic_preferences_registry.py:711
 msgid ""
 "Bypasses double checking by setting ballots to be automatically confirmed"
 msgstr ""
+"スコアシートを自動的に「確認済」状態にする"
 
 #: options/dynamic_preferences_registry.py:712
 msgid "Bypass double checking"
-msgstr ""
+msgstr "ダブルチェックを行わない"
 
 #: options/dynamic_preferences_registry.py:720
 msgid "If checked, ballots require a motion to be entered"
-msgstr ""
+msgstr "スコアシート入力時にモーションの情報も入力"
 
 #: options/dynamic_preferences_registry.py:721
 msgid "Enable motions"
-msgstr ""
+msgstr "モーションを入力"
 
 #: options/dynamic_preferences_registry.py:729
 msgid ""
@@ -799,214 +840,225 @@ msgid ""
 "ahead of public release (these pages are useful for displaying draws/motions "
 "to the public and for printing ballots)."
 msgstr ""
+"公開ページで公開される前に対戦表、モーションを表示するページへのアクセス権限"
+"（これらのページは対戦表、モーションをプロジェクターで映す際や、"
+"スコアシートを印刷する際に利用）"
 
 #: options/dynamic_preferences_registry.py:732
 msgid "Assistant user access"
-msgstr ""
+msgstr "アシスタントユーザのアクセス権限"
 
 #: options/dynamic_preferences_registry.py:737
 msgid "All areas (results entry, draw display, and motions)"
-msgstr ""
+msgstr "全て（結果入力、対戦表表示、モーション表示）"
 
 #: options/dynamic_preferences_registry.py:738
 msgid "Just results entry and draw display"
-msgstr ""
+msgstr "結果入力と対戦表表示"
 
 #: options/dynamic_preferences_registry.py:739
 msgid "Only results entry"
-msgstr ""
+msgstr "結果入力のみ"
 
 #: options/dynamic_preferences_registry.py:744
 #: options/templates/preferences_index.html:56
 msgid "Public Features"
-msgstr ""
+msgstr "公開ページ"
 
 #: options/dynamic_preferences_registry.py:750
 msgid "Enables the public page listing all participants in the tournament"
-msgstr ""
+msgstr "大会の全参加者を一覧表示"
 
 #: options/dynamic_preferences_registry.py:751
 msgid "Enable public view of participants list"
-msgstr ""
+msgstr "参加者の公開"
 
 #: options/dynamic_preferences_registry.py:759
 msgid "Enables the public page listing diversity statistics"
-msgstr ""
+msgstr "ダイバーシティに関する統計情報を一覧表示"
 
 #: options/dynamic_preferences_registry.py:760
 msgid "Enable public view of diversity info"
-msgstr ""
+msgstr "ダイバーシティの公開"
 
 #: options/dynamic_preferences_registry.py:768
 msgid ""
 "If the participants list is enabled, displays break category eligibility on "
 "that page"
 msgstr ""
+"参加者が各ブレイクカテゴリの資格を満たすかどうかを表示"
+"（「参加者の公開」が有効な場合のみ）"
 
 #: options/dynamic_preferences_registry.py:769
 msgid "Show break categories on participants page"
-msgstr ""
+msgstr "ブレイクカテゴリを公開"
 
 #: options/dynamic_preferences_registry.py:777
 msgid "Enables the public page listing pre-allocated sides"
-msgstr ""
+msgstr "既定サイドの情報を一覧表示"
 
 #: options/dynamic_preferences_registry.py:778
 msgid "Show pre-allocated sides to public"
-msgstr ""
+msgstr "既定サイドを公開"
 
 #: options/dynamic_preferences_registry.py:786
 msgid "Enables the public page showing released draws"
-msgstr ""
+msgstr "リリースされた対戦表を公開"
 
 #: options/dynamic_preferences_registry.py:787
 msgid "Enable public view of draw"
-msgstr ""
+msgstr "対戦表の公開"
 
 #: options/dynamic_preferences_registry.py:795
 msgid "Enables the public page showing results of non-silent rounds"
-msgstr ""
+msgstr "サイレントでないラウンドの対戦結果を公開"
 
 #: options/dynamic_preferences_registry.py:796
 msgid "Enable public view of results"
-msgstr ""
+msgstr "結果の公開"
 
 #: options/dynamic_preferences_registry.py:804
 msgid ""
 "Enables the public page showing motions that have been explicitly released "
 "to the public"
-msgstr ""
+msgstr "リリースされたモーションを公開"
 
 #: options/dynamic_preferences_registry.py:805
 msgid "Enable public view of motions"
-msgstr ""
+msgstr "モーションの公開"
 
 #: options/dynamic_preferences_registry.py:813
 msgid ""
 "Enables the public page showing team standings, showing wins only (not "
 "speaker scores or ranking)"
 msgstr ""
+"チームランキングを公開"
+"（スピーカースコア／ランキングは含めない）"
 
 #: options/dynamic_preferences_registry.py:814
 msgid "Enable public view of team standings"
-msgstr ""
+msgstr "チームランキングを公開"
 
 #: options/dynamic_preferences_registry.py:822
 msgid ""
 "Enables the public page for each team and adjudicator showing their records"
-msgstr ""
+msgstr "チームとジャッジの記録ページを公開"
 
 #: options/dynamic_preferences_registry.py:823
 msgid "Enable public record pages"
-msgstr ""
+msgstr "記録ページを公開"
 
 #: options/dynamic_preferences_registry.py:831
 msgid ""
 "Enables the public page showing the team breaks. Intended for use after the "
 "break announcement."
 msgstr ""
+"ブレイクしたチームを公開"
+"（ブレイキングアナウンスメント後の使用を想定）"
 
 #: options/dynamic_preferences_registry.py:832
 msgid "Release team breaks to public"
-msgstr ""
+msgstr "チームブレイクの公開"
 
 #: options/dynamic_preferences_registry.py:840
 msgid ""
 "Enables the public page showing breaking adjudicators. Intended for use "
 "after the break announcement."
 msgstr ""
+"ブレイクしたジャッジを公開"
+"（ブレイキングアナウンスメント後の使用を想定）"
 
 #: options/dynamic_preferences_registry.py:841
 msgid "Release adjudicators break to public"
-msgstr ""
+msgstr "ジャッジブレイクを公開"
 
 #: options/dynamic_preferences_registry.py:849
 msgid "Enables the public page detailing who has unsubmitted feedback"
-msgstr ""
+msgstr "誰がエバリュエーションシートを提出していないか公開"
 
 #: options/dynamic_preferences_registry.py:850
 msgid "Enable public view of unsubmitted feedback"
-msgstr ""
+msgstr "未提出のエバリュエーションシートを公開"
 
 #: options/dynamic_preferences_registry.py:857
 #: options/templates/preferences_index.html:61
 msgid "UI Options"
-msgstr ""
+msgstr "UI設定"
 
 #: options/dynamic_preferences_registry.py:863
 msgid "If showing results to public, show splitting adjudicators in them"
-msgstr ""
+msgstr "結果を公開する際、スプリットしたジャッジを表示"
 
 #: options/dynamic_preferences_registry.py:864
 msgid "Show splitting adjudicators"
-msgstr ""
+msgstr "スプリットしたジャッジを表示"
 
 #: options/dynamic_preferences_registry.py:872
 msgid ""
 "If showing results to public, show which motions were selected in the record"
-msgstr ""
+msgstr "結果を公開ページに掲載する際、どのモーションを選択したか表示"
 
 #: options/dynamic_preferences_registry.py:873
 msgid "Show motions in results"
-msgstr ""
+msgstr "モーションを表示"
 
 #: options/dynamic_preferences_registry.py:881
 msgid "Enables emoji in the draw"
-msgstr ""
+msgstr "絵文字を対戦表に表示"
 
 #: options/dynamic_preferences_registry.py:882
 msgid "Show emoji"
-msgstr ""
+msgstr "絵文字表示"
 
 #: options/dynamic_preferences_registry.py:890
 msgid "In tables listing teams, adds a column showing their institutions"
-msgstr ""
+msgstr "チーム一覧表に、所属大学の列を加える"
 
 #: options/dynamic_preferences_registry.py:891
 msgid "Show team institutions"
-msgstr ""
+msgstr "チームの所属大学を表示"
 
 #: options/dynamic_preferences_registry.py:899
 msgid ""
 "In tables listing adjudicators, adds a column showing their institutions"
-msgstr ""
+msgstr "ジャッジ一覧表に、所属大学の列を加える"
 
 #: options/dynamic_preferences_registry.py:900
 msgid "Show adjudicator institutions"
-msgstr ""
+msgstr "ジャッジの所属大学を表示"
 
 #: options/dynamic_preferences_registry.py:908
 msgid ""
 "Enables a hover element on every team's name showing that team's speakers"
-msgstr ""
+msgstr "チーム名をホバーすると、スピーカーが表示"
 
 #: options/dynamic_preferences_registry.py:909
 msgid "Show speakers in draw"
-msgstr ""
+msgstr "対戦表にスピーカーを表示"
 
 #: options/dynamic_preferences_registry.py:917
 msgid "If showing draws to public, show all (past and future) released draws"
-msgstr ""
+msgstr "対戦表を公開ページに掲載する際、過去と将来のものも表示"
 
 #: options/dynamic_preferences_registry.py:918
 msgid "Show all draws"
-msgstr ""
+msgstr "全ての対戦表を表示"
 
 #: options/dynamic_preferences_registry.py:926
 msgid "Order in which are listed by round in the public view"
-msgstr ""
+msgstr "公開ページで表示される各ラウンドごとのモーションの順序"
 
 #: options/dynamic_preferences_registry.py:927
 msgid "Order to display motions"
-msgstr ""
+msgstr "モーションの表示順序"
 
 #: options/dynamic_preferences_registry.py:931
 msgid "Earliest round first"
-msgstr ""
+msgstr "古いラウンドを上に"
 
 #: options/dynamic_preferences_registry.py:932
 msgid "Latest round first"
-msgstr ""
+msgstr "新しいラウンドを上に"
 
 #: options/dynamic_preferences_registry.py:937
 #: options/templates/preferences_index.html:67
@@ -1135,70 +1187,74 @@ msgstr ""
 
 #: options/models.py:14
 msgid "instance"
-msgstr ""
+msgstr "インスタンス"
 
 #: options/models.py:19
 msgid "tournament preference"
-msgstr ""
+msgstr "大会設定"
 
 #: options/models.py:20
 msgid "tournament preferences"
-msgstr ""
+msgstr "大会設定"
 
 #: options/templates/preferences_index.html:4
 #: options/templates/preferences_index.html:5
 msgid "Configuration"
-msgstr ""
+msgstr "設定"
 
 #: options/templates/preferences_index.html:16
 msgid "The range of scores that can awarded to speeches, replies, and teams"
-msgstr ""
+msgstr "スピーカースコア（リプライを含む）とチームスコア"
 
 #: options/templates/preferences_index.html:21
 msgid ""
 "How teams are paired in the draw and how adjudicators are auto-allocated"
-msgstr ""
+msgstr "対戦表の自動作成、ジャッジの自動アロケーション"
 
 #: options/templates/preferences_index.html:26
 msgid ""
 "How many speeches in a debate, how motions are decided, and whether reply "
 "speeches are used"
 msgstr ""
+"ディベートでのスピーチ回数、モーションの決定方法、リプライスピーチの有無"
 
 #: options/templates/preferences_index.html:31
 msgid "How teams and speakers are ranked in the released tabs"
-msgstr ""
+msgstr "チームとスピーカーの順位決定方法"
 
 #: options/templates/preferences_index.html:36
 msgid "How adjudicators are ranked and who can submit feedback"
-msgstr ""
+msgstr "ジャッジの順位決定方法、フィードバックを提出する参加者"
 
 #: options/templates/preferences_index.html:47
 msgid "When to release a public tab is made visible and what data it shows"
-msgstr ""
+msgstr "公開する大会結果と公開するタイミング"
 
 #: options/templates/preferences_index.html:52
 msgid ""
 "How ballots and feedback are entered, including online submission options"
 msgstr ""
+"バロットとフィードバックの入力方法（オンラインでの提出も含む）"
 
 #: options/templates/preferences_index.html:57
 msgid "What information the site displays on the publicly accessible pages"
-msgstr ""
+msgstr "公開ページで大会中に表示する情報"
 
 #: options/templates/preferences_index.html:62
 msgid "Small tweaks in what information is presented by the interface"
-msgstr ""
+msgstr "インターフェース上に表示される情報の調整"
 
 #: options/templates/preferences_index.html:68
 msgid ""
 "Special options for running large multi-venue multi-level debating "
 "competitions. Warning: these features are not fully tested or supported."
 msgstr ""
+"規模の大きい大会のための特殊な設定"
+"※この機能は十分にテストまたはサポートされていません"
 
 #: options/templates/preferences_index.html:81
 msgid "Manually Set Current Round"
-msgstr ""
+msgstr "手動で現在のラウンドを設定"
 
 #: options/templates/preferences_index.html:82
 msgid ""
@@ -1206,10 +1262,13 @@ msgid ""
 "results page. However, if there are special circumstances that require you "
 "to override this and set the current round to something else, use this page."
 msgstr ""
+"Tabbycatでは、通常各ラウンドの結果ページから現在のラウンドに進みます。"
+"しかし、特殊な事情により別のラウンドに進むまたは戻る場合は、"
+"ここで設定して下さい。"
 
 #: options/templates/preferences_index.html:89
 msgid "Presets"
-msgstr ""
+msgstr "プリセット"
 
 #: options/templates/preferences_index.html:90
 msgid ""
@@ -1218,63 +1277,67 @@ msgid ""
 "ensure they are correct for your tournament. Each links will display what "
 "settings it changes before applying them."
 msgstr ""
+"基本的なディベートのルールに則り作成されたプリセットです。"
+"あなたが運営する大会に適した設定かどうかを<a href="
+"\"https://tabbycat.readthedocs.io/\" target=\"_blank\">ドキュメント</a>を"
+"参照し確認してください。"
 
 #: options/templates/preferences_index.html:101
 #, python-format
 msgid "Apply %(preset_name)s"
-msgstr ""
+msgstr "%(preset_name)sを適用"
 
 #: options/templates/preferences_presets_complete.html:4
 #: options/templates/preferences_presets_complete.html:5
 #, python-format
 msgid "Presets Applied: %(preset_title)s"
-msgstr ""
+msgstr "プリセットを適用: %(preset_title)s"
 
 #: options/templates/preferences_presets_complete.html:10
 #: options/templates/preferences_presets_confirm.html:10
 #: options/templates/preferences_section_set.html:19
 msgid "Back to Configuration"
-msgstr ""
+msgstr "設定に戻る"
 
 #: options/templates/preferences_presets_complete.html:16
 msgid "Preferences that were changed"
-msgstr ""
+msgstr "変更された設定"
 
 #: options/templates/preferences_presets_confirm.html:4
 #: options/templates/preferences_presets_confirm.html:5
 #, python-format
 msgid "Confirm Presets: %(preset_title)s"
-msgstr ""
+msgstr "プリセットを確定: %(preset_title)s"
 
 #: options/templates/preferences_presets_confirm.html:20
 msgid "Preferences that will not change"
-msgstr ""
+msgstr "変更されない設定"
 
 #: options/templates/preferences_presets_confirm.html:34
 msgid "Preferences that will change"
-msgstr ""
+msgstr "変更される設定"
 
 #: options/templates/preferences_presets_confirm.html:41
 #, python-format
 msgid "Apply Presets: %(preset_title)s"
-msgstr ""
+msgstr "プリセットを適用: %(preset_title)s"
 
 #: options/templates/preferences_section_set.html:6
 #, python-format
 msgid "Configuration: %(section_name)s"
-msgstr ""
+msgstr "設定: %(section_name)s"
 
 #: options/templates/preferences_section_set.html:10
 #, python-format
 msgid "Edit Configuration: %(section_name)s"
-msgstr ""
+msgstr "設定を変更: %(section_name)s"
 
 #: options/views.py:55
 #, python-format
 msgid "Tournament options (%(section)s) saved."
-msgstr ""
+msgstr "大会の設定(%(section)s)を保存"
 
 #: options/views.py:108
 #, python-format
 msgid "Tournament options saved according to preset %(name)s."
-msgstr ""
+msgstr "プリセット%(name)sをベースに大会の設定を保存"
