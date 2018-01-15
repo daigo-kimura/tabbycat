@@ -258,12 +258,12 @@ msgstr "カテゴリ"
 #: utils/tables.py:643
 #, python-format
 msgid "This venue %(predicate)s."
-msgstr "この部屋%(preducate)s"
+msgstr "この部屋%(predicate)s"
 
 #: utils/tables.py:645
 #, python-format
 msgid "This venue %(predicates)s, and %(last_predicate)s."
-msgstr "この部屋%(preducate)s、またこの部屋%(last_predicate)s。"
+msgstr "この部屋%(predicates)s、またこの部屋%(last_predicate)s。"
 
 #: utils/tables.py:674 utils/tables.py:676
 msgid "Venue"
