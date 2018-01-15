@@ -85,10 +85,12 @@ msgid ""
 "Every team in a single tournament from the same institution must have a "
 "different name. Please correct the duplicate data."
 msgstr ""
+"この大会に参加するチームのうち、所属大学が同じチームはそれぞれ異なった"
+"チーム名である必要があります。重複するチーム名を修正してください。"
 
 #: importer/forms.py:304
 msgid "Rating"
-msgstr ""
+msgstr "レーティング"
 
 #: importer/templates/simple_import_adjudicators_details.html:4
 #: importer/templates/simple_import_adjudicators_details.html:6
@@ -96,7 +98,7 @@ msgstr ""
 #: importer/templates/simple_import_adjudicators_numbers.html:6
 msgctxt "page title"
 msgid "Add Adjudicators"
-msgstr ""
+msgstr "ジャッジを追加"
 
 #: importer/templates/simple_import_adjudicators_details.html:5
 #: importer/templates/simple_import_adjudicators_numbers.html:5
@@ -108,14 +110,14 @@ msgstr ""
 #: importer/templates/simple_import_venues_raw.html:5
 #, python-format
 msgid "(Step %(step)s of %(count)s)"
-msgstr ""
+msgstr "（ステップ%(step)s/%(count)s）"
 
 #: importer/templates/simple_import_adjudicators_details.html:13
 #: importer/templates/simple_import_institutions_details.html:17
 #: importer/templates/simple_import_teams_details.html:17
 #: importer/templates/simple_import_venues_details.html:13
 msgid "Previous Step"
-msgstr ""
+msgstr "一つ前のステップ"
 
 #: importer/templates/simple_import_adjudicators_details.html:17
 #, python-format
