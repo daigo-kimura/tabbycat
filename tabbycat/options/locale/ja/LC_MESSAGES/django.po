@@ -52,10 +52,12 @@ msgstr "サブスタンティブスピーチに対するスコアの刻み"
 msgid ""
 "The largest amount by which one team can beat another (0 means no limit)"
 msgstr ""
+"一度の試合で得られるチームスコアの最大値"
+"（BPのような3チーム以上が一つの試合に参加する形式で有効、0で制限なし）"
 
 #: options/dynamic_preferences_registry.py:50
 msgid "Maximum margin"
-msgstr "チームマージンの最大値"
+msgstr "チームスコアの最大値"
 
 #: options/dynamic_preferences_registry.py:59
 msgid "Minimum allowed score for reply speeches"
@@ -290,11 +292,11 @@ msgstr ""
 #: options/dynamic_preferences_registry.py:224
 msgid ""
 "In BP, how pullups are distributed. Only \"Anywhere\" is WUDC-compliant."
-msgstr ""
+msgstr "BPでのプルアップ配分方法。\"Anywhere\"のみがWUDC準拠。"
 
 #: options/dynamic_preferences_registry.py:225
 msgid "BP pullup distribution"
-msgstr ""
+msgstr "BPプルアップ配分"
 
 #: options/dynamic_preferences_registry.py:229
 msgid "Anywhere in bracket"
@@ -308,11 +310,12 @@ msgstr ""
 msgid ""
 "In BP, which position cost function to use (see documentation for details)"
 msgstr ""
-""
+"BPでの対戦表作成で用いられるポジションコスト関数"
+"（詳しくはドキュメントを参照）"
 
 #: options/dynamic_preferences_registry.py:238
 msgid "BP position cost"
-msgstr ""
+msgstr "BPポジションコスト"
 
 #: options/dynamic_preferences_registry.py:242
 msgid "Simple"

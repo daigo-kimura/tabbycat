@@ -20,7 +20,7 @@ msgstr ""
 
 #: utils/forms.py:55
 msgid "E-mail address"
-msgstr "Ｅメールアドレス"
+msgstr "Eメールアドレス"
 
 #: utils/tables.py:38
 msgid "No Data Available"
@@ -28,11 +28,11 @@ msgstr "使用可能データなし"
 
 #: utils/tables.py:143
 msgid "Ⓒ"
-msgstr ""
+msgstr "Ⓒ"
 
 #: utils/tables.py:144
 msgid "Ⓣ"
-msgstr ""
+msgstr "Ⓣ"
 
 #: utils/tables.py:148
 msgid "chair"
@@ -232,7 +232,7 @@ msgstr "順"
 
 #: utils/tables.py:543
 msgid "Order as listed"
-msgstr ""
+msgstr "一覧表示の順"
 
 #: utils/tables.py:564
 msgid "Team"
@@ -245,11 +245,11 @@ msgstr "カテゴリ"
 #: utils/tables.py:583 utils/tables.py:585 utils/tables.py:659
 #: utils/tables.py:661
 msgid "Division"
-msgstr ""
+msgstr "区分"
 
 #: utils/tables.py:592
 msgid "Redacted"
-msgstr ""
+msgstr "編集済"
 
 #: utils/tables.py:616
 msgid "Category"
@@ -258,12 +258,12 @@ msgstr "カテゴリ"
 #: utils/tables.py:643
 #, python-format
 msgid "This venue %(predicate)s."
-msgstr ""
+msgstr "この部屋%(preducate)s"
 
 #: utils/tables.py:645
 #, python-format
 msgid "This venue %(predicates)s, and %(last_predicate)s."
-msgstr ""
+msgstr "この部屋%(preducate)s、またこの部屋%(last_predicate)s。"
 
 #: utils/tables.py:674 utils/tables.py:676
 msgid "Venue"
