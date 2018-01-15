@@ -332,4 +332,4 @@ msgstr "サイド"
 #: utils/tables.py:837
 #, python-format
 msgid "Team %(num)d"
-msgstr ""
+msgstr "チーム %(num)d"
