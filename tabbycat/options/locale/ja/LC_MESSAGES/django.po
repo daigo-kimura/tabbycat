@@ -586,7 +586,7 @@ msgid ""
 "The number of debates a speaker can miss and still be on the speaker tab"
 msgstr ""
 "ディベーターが欠席してもよい回数の上限"
-"（上限を超えた場合、ランキングに表示されない）"
+"（上限を超えた場合、スピーカータブに表示されない）"
 
 #: options/dynamic_preferences_registry.py:485
 msgid "Debates missable for standings eligibility"
