@@ -202,26 +202,28 @@ msgstr "保存して別の制約を追加"
 #: venues/utils.py:38 venues/utils.py:50
 #, python-format
 msgid "Venue constraint of %(name)s met (%(category)s)"
-msgstr "部屋の制約「%(name)」を適用"
+msgstr "部屋の制約「%(name)」が満たされています（%(category)s）"
 
 #: venues/utils.py:39 venues/utils.py:51
 #, python-format
 msgid "Venue does not meet any constraint of %(name)s"
-msgstr ""
+msgstr "部屋は「%(name)s」の制約を満たしていません"
 
 #: venues/utils.py:44
 #, python-format
 msgid ""
 "Venue constraint of %(team)s met (%(category)s, via institution "
 "%(institution)s)"
-msgstr "%(team)s"
+msgstr ""
+"チーム%(team)sの所属大学（%(institution)s）に関する部屋の制約が"
+"満たされています（%(category)s）"
 
 #: venues/utils.py:45
 #, python-format
 msgid ""
 "Venue does not meet any constraint of institution %(institution)s (%(team)s)"
 msgstr ""
-""
+"部屋は所属大学（%(institution)s）に関する制約を満たしていません"
 
 #: venues/views.py:100
 #, python-format
