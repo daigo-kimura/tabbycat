@@ -20,63 +20,65 @@ msgstr ""
 #: importer/forms.py:19
 #, python-format
 msgid "line %(lineno)d: %(message)s"
-msgstr ""
+msgstr "行%(lineno)d： %(message)s"
 
 #: importer/forms.py:44
 msgid "Unaffiliated (i.e. no Institution)"
-msgstr ""
+msgstr "所属なし"
 
 #: importer/forms.py:47
 #, python-format
 msgid "%(name)s (%(code)s)"
-msgstr ""
+msgstr "%(name)s (%(code)s)"
 
 #: importer/forms.py:69
 #, python-format
 msgid "This line (for %(institution)s) didn't have a code"
-msgstr ""
+msgstr "この行には（%(institution)s）コードが記入されていません"
 
 #: importer/forms.py:74
 #, python-format
 msgid "This line (for %(institution)s) had too many columns"
-msgstr ""
+msgstr "この行は（%(institution)s）列が多すぎます"
 
 #: importer/forms.py:84
 msgid "There were no institutions to import."
-msgstr ""
+msgstr "インポートする大学がありません。"
 
 #: importer/forms.py:110
 msgid "There were no venues to import."
-msgstr ""
+msgstr "インポートする部屋がありません。"
 
 #: importer/forms.py:206
 msgid "Name (excluding institution name)"
-msgstr ""
+msgstr "名前（大学名を除く）"
 
 #: importer/forms.py:207
 msgid "Prefix team name with institution name?"
-msgstr ""
+msgstr "大学名をチーム名の前に挿入しますか？"
 
 #: importer/forms.py:219
 msgid "One speaker's name per line"
-msgstr ""
+msgstr "1行につき1人分のスピーカー名"
 
 #: importer/forms.py:221
 #, python-format
 msgid "Speaker %d"
-msgstr ""
+msgstr "スピーカー %d"
 
 #: importer/forms.py:223
 msgid "Optional; used for Private URLs. Format with one email address per line"
 msgstr ""
+"任意。プライベートURLに使用。"
+"1行につき1つのEメールアドレスを入力して下さい。"
 
 #: importer/forms.py:235
 msgid "There must be at least one speaker."
-msgstr ""
+msgstr "少なくとも1人以上のスピーカーが必要です。"
 
 #: importer/forms.py:244
 msgid "An email address is invalid."
-msgstr ""
+msgstr "Eメールアドレスが不正です。"
 
 #: importer/forms.py:292
 msgid ""
