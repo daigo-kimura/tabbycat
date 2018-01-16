@@ -8,7 +8,11 @@ from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
-from draw.models import DebateTeam
+from adjallocation.models import DebateAdjudicator
+from adjfeedback.models import AdjudicatorFeedback
+from draw.models import Debate, DebateTeam
+from results.models import BallotSubmission
+from results.result import VotingDebateResult
 from tournaments.models import Tournament
 from participants.models import Adjudicator, Institution, Speaker, Team
 from venues.models import Venue
@@ -186,6 +190,93 @@ class BaseDebateTestCase(TestCase):
         DebateTeam.objects.all().delete()
         Institution.objects.all().delete()
         self.t.delete()
+
+
+class FeedbackTestMixin:
+    """Mixin that provides methods for creating a debate and a feedback.
+    Subclasses must create data to `adjudicator`, `institution`, `teams`, `venues`
+    and `round` in setUp() properly."""
+
+    def _team(self, t):
+        return Team.objects.get(tournament=self.t, reference=t)
+
+    def _adj(self, a):
+        return Adjudicator.objects.get(tournament=self.t, name=a)
+
+    def _dt(self, debate, t):
+        return DebateTeam.objects.get(debate=debate, team=self._team(t))
+
+    def _da(self, debate, a):
+        return DebateAdjudicator.objects.get(debate=debate, adjudicator=self._adj(a))
+
+    def _create_debate(self, teams, adjs, votes, trainees=[], venue=None):
+        """Enters a debate into the database, using the teams and adjudicators specified.
+        `votes` should be a string (or iterable of characters) indicating "a" for affirmative or
+            "n" for negative, e.g. "ann" if the chair was rolled in a decision for the negative.
+        The method will give the winning team all 76s and the losing team all 74s.
+        The first adjudicator is the chair; the rest are panellists."""
+
+        if venue is None:
+            venue = Venue.objects.first()
+        debate = Debate.objects.create(round=self.rd, venue=venue)
+
+        aff, neg = teams
+        aff_team = self._team(aff)
+        DebateTeam.objects.create(debate=debate, team=aff_team, side=DebateTeam.SIDE_AFF)
+        neg_team = self._team(neg)
+        DebateTeam.objects.create(debate=debate, team=neg_team, side=DebateTeam.SIDE_NEG)
+
+        chair = self._adj(adjs[0])
+        DebateAdjudicator.objects.create(debate=debate, adjudicator=chair,
+                type=DebateAdjudicator.TYPE_CHAIR)
+        for p in adjs[1:]:
+            panellist = self._adj(p)
+            DebateAdjudicator.objects.create(debate=debate, adjudicator=panellist,
+                    type=DebateAdjudicator.TYPE_PANEL)
+        for tr in trainees:
+            trainee = self._adj(tr)
+            DebateAdjudicator.objects.create(debate=debate, adjudicator=trainee,
+                    type=DebateAdjudicator.TYPE_TRAINEE)
+
+        ballotsub = BallotSubmission(debate=debate, submitter_type=BallotSubmission.SUBMITTER_TABROOM)
+        result = VotingDebateResult(ballotsub)
+
+        for t, side in zip(teams, ('aff', 'neg')):
+            team = self._team(t)
+            speakers = team.speaker_set.all()
+            for pos, speaker in enumerate(speakers, start=1):
+                result.set_speaker(side, pos, speaker)
+                result.set_ghost(side, pos, False)
+            result.set_speaker(side, 4, speakers[0])
+            result.set_ghost(side, 4, False)
+
+        for a, vote in zip(adjs, votes):
+            adj = self._adj(a)
+            if vote == 'a':
+                sides = ('aff', 'neg')
+            elif vote == 'n':
+                sides = ('neg', 'aff')
+            else:
+                raise ValueError
+            for side, score in zip(sides, (76, 74)):
+                for pos in range(1, 4):
+                    result.set_score(adj, side, pos, score)
+                result.set_score(adj, side, 4, score / 2)
+
+        ballotsub.confirmed = True
+        ballotsub.save()
+        result.save()
+
+        return debate
+
+    def _create_feedback(self, source, target):
+        if isinstance(source, DebateTeam):
+            source_kwargs = dict(source_team=source)
+        else:
+            source_kwargs = dict(source_adjudicator=source)
+        target_adj = self._adj(target)
+        return AdjudicatorFeedback.objects.create(confirmed=True, adjudicator=target_adj, score=3,
+                **source_kwargs)
 
 
 @tag('selenium') # Exclude from Travis
