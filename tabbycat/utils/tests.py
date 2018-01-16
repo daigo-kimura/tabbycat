@@ -269,13 +269,13 @@ class FeedbackTestMixin:
 
         return debate
 
-    def _create_feedback(self, source, target):
+    def _create_feedback(self, source, target, score=3):
         if isinstance(source, DebateTeam):
             source_kwargs = dict(source_team=source)
         else:
             source_kwargs = dict(source_adjudicator=source)
         target_adj = self._adj(target)
-        return AdjudicatorFeedback.objects.create(confirmed=True, adjudicator=target_adj, score=3,
+        return AdjudicatorFeedback.objects.create(confirmed=True, adjudicator=target_adj, score=score,
                 **source_kwargs)
 
 
