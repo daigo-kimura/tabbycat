@@ -380,7 +380,7 @@ class ShowUnaccredited(BooleanPreference):
 
 @tournament_preferences_registry.register
 class AverageFeedbackScoreCalculation(ChoicePreference):
-    help_text = _("")
+    help_text = _("How to calculate an average feedback score")
     verbose_name = _("Average feedback score calculation")
     section = feedback
     name = 'average_feedback_score_calculation'
