@@ -5,7 +5,7 @@ from django.test import TestCase
 from draw.models import DebateTeam
 from participants.models import Adjudicator, Institution, Speaker, Team
 from tournaments.models import Round, Tournament
-from utils.tests import suppress_logs, FeedbackTestMixin
+from utils.tests import FeedbackTestMixin, suppress_logs
 from venues.models import Venue
 
 from ..progress import FeedbackExpectedSubmissionFromAdjudicatorTracker, FeedbackExpectedSubmissionFromTeamTracker
