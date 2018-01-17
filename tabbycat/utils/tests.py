@@ -197,6 +197,9 @@ class FeedbackTestMixin:
     Subclasses must create data to `adjudicator`, `institution`, `teams`, `venues`
     and `round` in setUp() properly."""
 
+    def _venue(self, v):
+        return Venue.objects.get(name=v)
+
     def _team(self, t):
         return Team.objects.get(tournament=self.t, reference=t)
 
