@@ -121,12 +121,12 @@ class Tournament(models.Model):
 
             f_count = defaultdict(int)
             f_score_sum = defaultdict(int)
-            avg_by_round = [f_score_sum[k] / f_count[k] for k in f_count.keys()]
 
             for f in feedbacks:
-                round = f.round
-                f_count[round] += 1
-                f_score_sum[round] += f.score
+                pk = f.round.pk
+                f_count[pk] += 1
+                f_score_sum[pk] += f.score
+            avg_by_round = [f_score_sum[k] / f_count[k] for k in f_count.keys()]
 
             if len(avg_by_round) == 0:
                 return None
