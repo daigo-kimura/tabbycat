@@ -116,7 +116,7 @@ msgstr "--ジャッジ--"
 
 #: adjfeedback/forms.py:258
 msgid "Adjudicator this feedback is about"
-msgstr "このエバリュエーションシートのジャッジ"
+msgstr "評価対象となるジャッジ"
 
 #: adjfeedback/forms.py:281
 #, python-format
