@@ -648,7 +648,7 @@ msgstr "チームタブの公開"
 msgid ""
 "Only show scores for the top X teams in the public tab (set to 0 to show all "
 "teams)."
-msgstr "上位Xチームまでのタブのみを公開（0で全チーム）"
+msgstr "上位Xチームのスコアを公開タブで公開（0で全チーム）"
 
 #: options/dynamic_preferences_registry.py:555
 msgid "Top teams cutoff"
@@ -668,7 +668,7 @@ msgstr "スピーカータブを公開"
 msgid ""
 "Only show scores for the top X speakers in the public tab (set to 0 to show "
 "all speakers)."
-msgstr "上位X人のスピーカーのタブのみを公開（0で全員）"
+msgstr "上位X人のスピーカーのスコアを公開タブで公開（0で全員）"
 
 #: options/dynamic_preferences_registry.py:573
 msgid "Top speakers cutoff"
@@ -688,7 +688,7 @@ msgstr "リプライタブを公開"
 msgid ""
 "Only show scores for the top X repliers in the public tab (set to 0 to show "
 "all repliers)."
-msgstr "上位X人のリプライスピーカーのタブのみを公開（0で全員）"
+msgstr "上位X人のリプライスピーカーのスコアを公開タブで公開（0で全員）"
 
 #: options/dynamic_preferences_registry.py:591
 msgid "Top replies cutoff"
@@ -1231,7 +1231,7 @@ msgstr "ジャッジの順位決定方法、フィードバックを提出する
 
 #: options/templates/preferences_index.html:47
 msgid "When to release a public tab is made visible and what data it shows"
-msgstr "公開する大会結果と公開するタイミング"
+msgstr "公開タブで公開する大会結果と公開するタイミング"
 
 #: options/templates/preferences_index.html:52
 msgid ""
