@@ -19,98 +19,102 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 #: adjallocation/apps.py:7
 msgid "Adjudicator Allocation"
-msgstr ""
+msgstr "ジャッジアロケーション"
 
 #: adjallocation/models.py:18
 msgid "chair"
-msgstr ""
+msgstr "チェア"
 
 #: adjallocation/models.py:19
 msgid "panellist"
-msgstr ""
+msgstr "パネリスト"
 
 #: adjallocation/models.py:20
 msgid "trainee"
-msgstr ""
+msgstr "トレイニー"
 
 #: adjallocation/models.py:26
 msgid "debate"
-msgstr ""
+msgstr "ディベート"
 
 #: adjallocation/models.py:28 adjallocation/models.py:44
 #: adjallocation/models.py:68
 msgid "adjudicator"
-msgstr ""
+msgstr "ジャッジ"
 
 #: adjallocation/models.py:30
 msgid "type"
-msgstr ""
+msgstr "タイプ"
 
 #: adjallocation/models.py:31
 msgid "available?"
-msgstr ""
+msgstr "参加可能?"
 
 #: adjallocation/models.py:37
 msgid "debate adjudicator"
-msgstr ""
+msgstr "ディベートジャッジ"
 
 #: adjallocation/models.py:38
 msgid "debate adjudicators"
-msgstr ""
+msgstr "ディベートジャッジ"
 
 #: adjallocation/models.py:46
 msgid "team"
-msgstr ""
+msgstr "チーム"
 
 #: adjallocation/models.py:49
 msgid "adjudicator-team conflict"
-msgstr ""
+msgstr "ジャッジ・チーム間コンフリクト"
 
 #: adjallocation/models.py:50
 msgid "adjudicator-team conflicts"
-msgstr ""
+msgstr "ジャッジ・チーム間コンフリクト"
 
 #: adjallocation/models.py:56
 msgid "adjudicator 1"
-msgstr ""
+msgstr "ジャッジ1"
 
 #: adjallocation/models.py:58
 msgid "adjudicator 2"
-msgstr ""
+msgstr "ジャッジ2"
 
 #: adjallocation/models.py:61
 msgid "adjudicator-adjudicator conflict"
-msgstr ""
+msgstr "ジャッジ間コンフリクト"
 
 #: adjallocation/models.py:62
 msgid "adjudicator-adjudicator conflicts"
-msgstr ""
+msgstr "ジャッジ間コンフリクト"
 
 #: adjallocation/models.py:70
 msgid "institution"
-msgstr ""
+msgstr "大学"
 
 #: adjallocation/models.py:73
 msgid "adjudicator-institution conflict"
-msgstr ""
+msgstr "ジャッジ・大学間コンフリクト"
 
 #: adjallocation/models.py:74
 msgid "adjudicator-institution conflicts"
-msgstr ""
+msgstr "ジャッジ・大学間コンフリクト"
 
 #: adjallocation/templates/edit_adjudicators.html:11
 #, python-format
 msgid "Edit Adjudicators for %(round_abbr)s"
-msgstr ""
+msgstr "%(round_abbr)sのジャッジを編集"
 
 #: adjallocation/views.py:132
 msgid "Draw is already released, unrelease draw to redo auto-allocations."
 msgstr ""
+"対戦表はリリースされています、"
+"自動アロケーションをやり直すにはリリースを取り消してください。"
 
 #: adjallocation/views.py:136
 msgid "Draw is not confirmed, confirm draw to run auto-allocations."
 msgstr ""
+"対戦表は未確定です、自動アロケーションを行う前に対戦表を確定してください。"
 
 #: adjallocation/views.py:182
 msgid "Not all adjudicators specified are associated with the tournament."
 msgstr ""
+"選択されたジャッジの中に、この大会に参加しないジャッジがいます。"
