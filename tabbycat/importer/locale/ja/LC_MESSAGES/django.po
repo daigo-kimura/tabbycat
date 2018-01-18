@@ -24,22 +24,22 @@ msgstr "行%(lineno)d： %(message)s"
 
 #: importer/forms.py:44
 msgid "Unaffiliated (i.e. no Institution)"
-msgstr "所属なし"
+msgstr "所属大学なし"
 
 #: importer/forms.py:47
 #, python-format
 msgid "%(name)s (%(code)s)"
-msgstr "%(name)s (%(code)s)"
+msgstr "%(name)s（%(code)s）"
 
 #: importer/forms.py:69
 #, python-format
 msgid "This line (for %(institution)s) didn't have a code"
-msgstr "この行には（%(institution)s）コードが記入されていません"
+msgstr "この行（%(institution)s）にはコードが記入されていません"
 
 #: importer/forms.py:74
 #, python-format
 msgid "This line (for %(institution)s) had too many columns"
-msgstr "この行は（%(institution)s）列が多すぎます"
+msgstr "この行（%(institution)s）は列が多すぎます"
 
 #: importer/forms.py:84
 msgid "There were no institutions to import."
@@ -64,7 +64,7 @@ msgstr "1行につき1人分のスピーカー名"
 #: importer/forms.py:221
 #, python-format
 msgid "Speaker %d"
-msgstr "スピーカー %d"
+msgstr "スピーカー%d"
 
 #: importer/forms.py:223
 msgid "Optional; used for Private URLs. Format with one email address per line"
@@ -130,19 +130,25 @@ msgid ""
 "a>\" enabled. Providing email addresses is optional but can be useful if "
 "using Private URLs for feedback or ballots."
 msgstr ""
+"この大会の設定に準じ、レーティングは<strong>%(min)s</strong>と"
+"<strong>%(max)s</strong>の間の数値を入力してください。「共有」に"
+"チェックされたジャッジは特定の大会に関連付けられず、\"<a href="
+"\"%(options_league_url)s\" class=\"alert-link\">共有ジャッジ設定</"
+"a>\"が有効になっている大会であれば、どれでもジャッジ可能になります。"
+"Eメールアドレスの欄は任意ですが、プライベートURLを送る際に場合に便利です。"
 
 #: importer/templates/simple_import_adjudicators_details.html:45
 #, python-format
 msgid "Adjudicators for %(institution_name)s"
-msgstr ""
+msgstr "%(institution_name)sのジャッジ"
 
 #: importer/templates/simple_import_adjudicators_details.html:49
 msgid "Unaffiliated Adjudicators"
-msgstr ""
+msgstr "所属なしのジャッジ"
 
 #: importer/templates/simple_import_adjudicators_details.html:69
 msgid "Save All Adjudicators"
-msgstr ""
+msgstr "全てのジャッジを保存"
 
 #: importer/templates/simple_import_adjudicators_numbers.html:14
 #, python-format
@@ -150,28 +156,32 @@ msgid ""
 "You need to <a href=\"%(import_institutions_url)s\" class=\"alert-link\">add "
 "institutions</a> before adding adjudicators."
 msgstr ""
+"ジャッジを追加する前に<a href=\"%(import_institutions_url)s\""
+"class=\"alert-link\">大学を追加</a>してください。"
 
 #: importer/templates/simple_import_adjudicators_numbers.html:23
 msgid ""
 "Specify the number of new adjudicators to add per institution. In the next "
 "step you can specify their names and ratings."
 msgstr ""
+"新しく追加するジャッジの人数を大学ごとに入力してください。"
+"次のステップでジャッジの名前とレーティングを設定します。"
 
 #: importer/templates/simple_import_adjudicators_numbers.html:32
 #: importer/templates/simple_import_institutions_raw.html:30
 msgid "There are some problems with the data on this form:"
-msgstr ""
+msgstr "このフォームに誤りがあります："
 
 #: importer/templates/simple_import_adjudicators_numbers.html:54
 #: importer/templates/simple_import_teams_numbers.html:53
 msgctxt "button"
 msgid "Next Step"
-msgstr ""
+msgstr "次のステップ"
 
 #: importer/templates/simple_import_index.html:4
 #: importer/templates/simple_import_index.html:5
 msgid "Simple Importer"
-msgstr ""
+msgstr "シンプルインポーター"
 
 #: importer/templates/simple_import_index.html:9
 msgid ""
@@ -181,30 +191,36 @@ msgid ""
 "background. This <strong>simple importer</strong> is the easiest to use and "
 "works well for small- and medium-sized tournaments."
 msgstr ""
+"Tabbycatにデータをインポートするには<a href=\"https://tabbycat.readthedocs."
+"io/en/stable/use/importing-data.html\" target=\"_blank\">いくつか方法</a>が"
+"あります。どの方法が最適かは、大会の規模やあなたがPCに慣れているかどうかに"
+"よって変わります。この<strong>シンプルインポーター</strong>は最も簡単で"
+"小〜中規模の大会に適しています。"
+
 
 #: importer/templates/simple_import_index.html:16
 msgid "Add Institutions"
-msgstr ""
+msgstr "大学を追加"
 
 #: importer/templates/simple_import_index.html:21
 msgid "Add Teams"
-msgstr ""
+msgstr "チームを追加"
 
 #: importer/templates/simple_import_index.html:25
 msgid "Add Adjudicators"
-msgstr ""
+msgstr "ジャッジを追加"
 
 #: importer/templates/simple_import_index.html:29
 msgid "Add Venues"
-msgstr ""
+msgstr "部屋を追加"
 
 #: importer/templates/simple_import_index.html:33
 msgid "Add/Edit Venue Categories"
-msgstr ""
+msgstr "部屋カテゴリを追加・編集"
 
 #: importer/templates/simple_import_index.html:37
 msgid "Add/Edit Venue Constraints"
-msgstr ""
+msgstr "部屋制約を追加・編集"
 
 #: importer/templates/simple_import_institutions_details.html:4
 #: importer/templates/simple_import_institutions_details.html:6
@@ -212,16 +228,16 @@ msgstr ""
 #: importer/templates/simple_import_institutions_raw.html:6
 msgctxt "page title"
 msgid "Add Institutions"
-msgstr ""
+msgstr "大学を追加"
 
 #: importer/templates/simple_import_institutions_details.html:38
 msgid "Save All Institutions"
-msgstr ""
+msgstr "全ての大学を保存"
 
 #: importer/templates/simple_import_institutions_raw.html:41
 #: importer/templates/simple_import_venues_raw.html:40
 msgid "Next Step"
-msgstr ""
+msgstr "次のステップ"
 
 #: importer/templates/simple_import_teams_details.html:4
 #: importer/templates/simple_import_teams_details.html:6
@@ -229,20 +245,20 @@ msgstr ""
 #: importer/templates/simple_import_teams_numbers.html:6
 msgctxt "page title"
 msgid "Add Teams"
-msgstr ""
+msgstr "チームを追加"
 
 #: importer/templates/simple_import_teams_details.html:33
 #, python-format
 msgid "Teams for %(institution_name)s"
-msgstr ""
+msgstr "%(institution_name)sのチーム"
 
 #: importer/templates/simple_import_teams_details.html:37
 msgid "Unaffiliated Teams"
-msgstr ""
+msgstr "所属なしのチーム"
 
 #: importer/templates/simple_import_teams_details.html:51
 msgid "Save All Teams"
-msgstr ""
+msgstr "全てのチームを保存"
 
 #: importer/templates/simple_import_teams_numbers.html:15
 #, python-format
@@ -250,12 +266,16 @@ msgid ""
 "You need to <a href=\"%(import_institutions_url)s\" class=\"alert-link\">add "
 "institutions</a> before adding teams."
 msgstr ""
+"チームを追加する前に<a href=\"%(import_institutions_url)s\""
+"class=\"alert-link\">大学を追加</a>してください。"
 
 #: importer/templates/simple_import_teams_numbers.html:24
 msgid ""
 "Specify the number of new teams to add per institution. In the next step you "
 "can specify team and speaker names."
 msgstr ""
+"新しく追加するチームの人数を大学ごとに入力してください。"
+"次のステップでチームとスピーカーの名前を設定します。"
 
 #: importer/templates/simple_import_venues_details.html:4
 #: importer/templates/simple_import_venues_details.html:6
@@ -263,7 +283,7 @@ msgstr ""
 #: importer/templates/simple_import_venues_raw.html:6
 msgctxt "page title"
 msgid "Add Venues"
-msgstr ""
+msgstr "部屋の追加"
 
 #: importer/templates/simple_import_venues_details.html:16
 msgid ""
@@ -271,6 +291,8 @@ msgid ""
 "more venues than you need you can mark the worst venues with a lower "
 "priority number\""
 msgstr ""
+"低い優先度ほど部屋は対戦表で使われにくくなります。"
+"必要以上の部屋が使用可能な場合、使いたくない部屋の優先度を低くしてください。"
 
 #: importer/templates/simple_import_venues_details.html:18
 #, python-format
@@ -280,17 +302,20 @@ msgid ""
 "href='%(options_league_url)s' class='alert-link'>'Share Venues' setting</a> "
 "enabled."
 msgstr ""
+"「共有」にチェックされた部屋は特定の大会に関連付けられず、<a href='"
+"%(options_league_url)s' class='alert-link'>共有部屋設定</a>が有効になっている"
+"大会であれば、どこでも使用可能になります。"
 
 #: importer/templates/simple_import_venues_details.html:33
 msgid "Save All Venues"
-msgstr ""
+msgstr "全ての部屋を保存"
 
 #: importer/views.py:73
 #, python-format
 msgid "Added %(count)d %(model_plural)s."
-msgstr ""
+msgstr "%(count)dの%(model_plural)sを追加"
 
 #: importer/views.py:168
 #, python-format
 msgid "Adjudicator %(number)d"
-msgstr ""
+msgstr "ジャッジ%(number)d"
