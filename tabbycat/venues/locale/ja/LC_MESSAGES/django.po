@@ -112,11 +112,11 @@ msgstr ""
 
 #: venues/models.py:96
 msgid "venue category"
-msgstr "部屋のカテゴリ"
+msgstr "部屋カテゴリ"
 
 #: venues/models.py:97
 msgid "venue categories"
-msgstr "部屋のカテゴリ"
+msgstr "部屋カテゴリ"
 
 #: venues/models.py:127
 msgid "category"
@@ -132,20 +132,20 @@ msgstr "対象ＩＤ"
 
 #: venues/models.py:140
 msgid "venue constraint"
-msgstr "部屋の制約"
+msgstr "部屋制約"
 
 #: venues/models.py:141
 msgid "venue constraints"
-msgstr "部屋の制約"
+msgstr "部屋制約"
 
 #: venues/templates/venue_categories_edit.html:4
 #: venues/templates/venue_categories_edit.html:5
 msgid "Venue Categories"
-msgstr "部屋のカテゴリ"
+msgstr "部屋カテゴリ"
 
 #: venues/templates/venue_categories_edit.html:7
 msgid "Save Venue Categories"
-msgstr "部屋のカテゴリを保存"
+msgstr "部屋カテゴリを保存"
 
 #: venues/templates/venue_categories_edit.html:11
 msgid ""
@@ -155,7 +155,7 @@ msgid ""
 "adjudicators or institutions to be put in a venue in a particular category.</"
 "li> </ul>"
 msgstr ""
-"部屋のカテゴリには以下の利点があります。<ul>"
+"部屋カテゴリには以下の利点があります。<ul>"
 "<li>建物の種別等をカテゴリにし対戦表に表示することで、"
 "参加者が部屋の位置を把握しやすい</li>"
 "<li>特定の部屋でのみ試合に参加できる参加者がいる際、"
@@ -167,13 +167,13 @@ msgid ""
 "If you want to delete venue categories, use the <a href=\"%(edit_db_url)s\" "
 "class=\"alert-link\">Edit Database</a> area."
 msgstr ""
-"部屋のカテゴリを削除したい場合、<a href=\"%(edit_db_url)s\" "
-"class=\"alert-link\">データベースの編集</a>へ."
+"部屋カテゴリの削除は、<a href=\"%(edit_db_url)s\" "
+"class=\"alert-link\">データベースの編集</a>で行ってください。"
 
 #: venues/templates/venue_constraints_edit.html:4
 #: venues/templates/venue_constraints_edit.html:5
 msgid "Venue Constraints"
-msgstr "部屋の制約"
+msgstr "部屋制約"
 
 #: venues/templates/venue_constraints_edit.html:9
 msgid ""
@@ -184,7 +184,7 @@ msgid ""
 "can also use the priority field to specify \"lower-preference\" constraints, "
 "which are taken if a higher-priority constraint couldn't be met."
 msgstr ""
-"部屋の制約によって、特定のカテゴリに属する部屋でのみ、"
+"部屋制約によって、特定のカテゴリに属する部屋でのみ、"
 "参加者にディベートを行わせることが出来ます。ここでは「特定のチーム」、"
 "「特定のジャッジ」もしくは「特定の大学に属する全チーム（ジャッジは対象外）」が"
 "制約の対象となります。同時に複数の制約を適用出来ない場合、"
@@ -193,7 +193,7 @@ msgstr ""
 
 #: venues/templates/venue_constraints_edit.html:41
 msgid "Save Venue Constraints"
-msgstr "部屋の制約を保存"
+msgstr "部屋制約を保存"
 
 #: venues/templates/venue_constraints_edit.html:44
 msgid "Save and Add More"
@@ -202,7 +202,7 @@ msgstr "保存して別の制約を追加"
 #: venues/utils.py:38 venues/utils.py:50
 #, python-format
 msgid "Venue constraint of %(name)s met (%(category)s)"
-msgstr "部屋の制約「%(name)s」が満たされています（%(category)s）"
+msgstr "部屋制約「%(name)s」が満たされています（%(category)s）"
 
 #: venues/utils.py:39 venues/utils.py:51
 #, python-format
@@ -215,7 +215,7 @@ msgid ""
 "Venue constraint of %(team)s met (%(category)s, via institution "
 "%(institution)s)"
 msgstr ""
-"チーム%(team)sの所属大学（%(institution)s）に関する部屋の制約が"
+"チーム%(team)sの所属大学（%(institution)s）に関する部屋制約が"
 "満たされています（%(category)s）"
 
 #: venues/utils.py:45
@@ -229,16 +229,16 @@ msgstr ""
 #, python-format
 msgid "Saved venue category: %(list)s"
 msgid_plural "Saved venue categories: %(list)s"
-msgstr[0] "保存された部屋のカテゴリ：%(list)s"
-msgstr[1] "保存された部屋のカテゴリ：%(list)s"
+msgstr[0] "保存された部屋カテゴリ：%(list)s"
+msgstr[1] "保存された部屋カテゴリ：%(list)s"
 
 #: venues/views.py:106
 msgid "No changes were made to the venue categories."
-msgstr "部屋のカテゴリに対する変更はありません"
+msgstr "部屋カテゴリに対する変更はありません"
 
 #: venues/views.py:176
 #, python-format
 msgid "Saved %(count)d venue constraint."
 msgid_plural "Saved %(count)d venue constraints."
-msgstr[0] "%(count)dつの部屋のカテゴリを保存しました"
-msgstr[1] "%(count)dつの部屋のカテゴリを保存しました"
+msgstr[0] "%(count)dつの部屋カテゴリを保存しました"
+msgstr[1] "%(count)dつの部屋カテゴリを保存しました"
