@@ -12,171 +12,171 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 #: standings/base.py:279
 msgid "The same metric would be added twice:"
-msgstr ""
+msgstr "同じ指標を2度追加しています："
 
 #: standings/base.py:280
 msgid "The same ranking would be added twice:"
-msgstr ""
+msgstr "同じランキングを2度追加しています："
 
 #: standings/base.py:348
 #, python-format
 msgid "Unrecognized metric code: \"%(code)s\""
-msgstr ""
+msgstr "不明な指標コード：\"%(code)s\""
 
 #: standings/speakers.py:68 standings/speakers.py:100
 msgid "total"
-msgstr ""
+msgstr "合計"
 
 #: standings/speakers.py:69 standings/speakers.py:101
 msgid "Total"
-msgstr ""
+msgstr "合計"
 
 #: standings/speakers.py:76 standings/speakers.py:109
 msgid "average"
-msgstr ""
+msgstr "平均"
 
 #: standings/speakers.py:77 standings/speakers.py:110
 msgid "Avg"
-msgstr ""
+msgstr "平均"
 
 #: standings/speakers.py:84 standings/speakers.py:118
 msgid "standard deviation"
-msgstr ""
+msgstr "標準偏差"
 
 #: standings/speakers.py:85 standings/speakers.py:119
 msgid "Stdev"
-msgstr ""
+msgstr "Std"
 
 #: standings/speakers.py:92
 msgid "speeches given"
-msgstr ""
+msgstr "スピーチ回数"
 
 #: standings/speakers.py:93 standings/speakers.py:128
 msgid "Num"
-msgstr ""
+msgstr "回数"
 
 #: standings/speakers.py:127
 msgid "replies given"
-msgstr ""
+msgstr "リプライ回数"
 
 #: standings/teams.py:82 standings/teams.py:113
 msgid "points"
-msgstr ""
+msgstr "点"
 
 #: standings/teams.py:83 standings/teams.py:114
 msgid "Pts"
-msgstr ""
+msgstr "点"
 
 #: standings/teams.py:85
 msgid "Points (2/1/0)"
-msgstr ""
+msgstr "点（2/1/0）"
 
 #: standings/teams.py:123
 msgid "wins"
-msgstr ""
+msgstr "勝"
 
 #: standings/teams.py:124 standings/views.py:542
 msgid "Wins"
-msgstr ""
+msgstr "勝"
 
 #: standings/teams.py:134
 msgid "total speaker score"
-msgstr ""
+msgstr "合計スピーカースコア"
 
 #: standings/teams.py:135
 msgid "Spk"
-msgstr ""
+msgstr "合計S"
 
 #: standings/teams.py:144
 msgid "average speaker score"
-msgstr ""
+msgstr "平均スピーカースコア"
 
 #: standings/teams.py:145
 msgid "ASS"
-msgstr ""
+msgstr "平均S"
 
 #: standings/teams.py:155
 msgid "sum of margins"
-msgstr ""
+msgstr "合計マージン"
 
 #: standings/teams.py:156
 msgid "Marg"
-msgstr ""
+msgstr "合計M"
 
 #: standings/teams.py:165
 msgid "average margin"
-msgstr ""
+msgstr "平均マージン"
 
 #: standings/teams.py:166
 msgid "AWM"
-msgstr ""
+msgstr "平均M"
 
 #: standings/teams.py:176
 msgid "draw strength"
-msgstr ""
+msgstr "対戦相手の勝数"
 
 #: standings/teams.py:177
 msgid "DS"
-msgstr ""
+msgstr "DS"
 
 #: standings/teams.py:216
 msgid "number of adjudicators who voted for this team"
-msgstr ""
+msgstr "ジャッジがこのチームに投票した数"
 
 #: standings/teams.py:217
 msgid "Ballots"
-msgstr ""
+msgstr "バロット"
 
 #: standings/teams.py:218
 msgid "votes/ballots carried"
-msgstr ""
+msgstr "非投票数"
 
 #: standings/teams.py:242
 msgid "number of firsts"
-msgstr ""
+msgstr "1位の回数"
 
 #: standings/teams.py:243
 msgid "1sts"
-msgstr ""
+msgstr "1位数"
 
 #: standings/teams.py:252
 msgid "number of seconds"
-msgstr ""
+msgstr "2位の回数"
 
 #: standings/teams.py:253
 msgid "2nds"
-msgstr ""
+msgstr "2位数"
 
 #: standings/teams.py:265
 msgid "Who-beat-whom"
-msgstr ""
+msgstr "対戦相手の強さ"
 
 #: standings/teams.py:266
 msgid "WBW"
-msgstr ""
+msgstr "WBW"
 
 #: standings/teams.py:267
 msgid "who-beat-whom"
-msgstr ""
+msgstr "対戦相手の強さ"
 
 #: standings/teams.py:312
 msgid "Who-beat-whom (in division)"
-msgstr ""
+msgstr "ディビジョン内の対戦相手の強さ"
 
 #: standings/teams.py:313
 msgid "WBWD"
-msgstr ""
+msgstr "WBWD"
 
 #: standings/teams.py:314
 msgid "who-beat-whom (in divisions)"
-msgstr ""
+msgstr "ディビジョン内の対戦相手の強さ"
 
 #: standings/templates/current_standings.html:6
 msgid ""
@@ -184,6 +184,9 @@ msgid ""
 "does not indicate each team's ranking within each bracket. It also excludes "
 "silent rounds (if any)."
 msgstr ""
+"この一覧ではチームスコア順に並べられています。チームスコアが同じチームは辞書順"
+"に並べられており、その順序はチームのランキングに一切関係がありません。また、"
+"サイレントラウンドの結果は含めていません。"
 
 #: standings/templates/current_standings.html:12
 msgid ""
@@ -191,11 +194,16 @@ msgid ""
 "does not indicate each team's ranking within each bracket. It also excludes "
 "silent rounds (if any)."
 msgstr ""
+"この一覧では勝数順に並べられています。勝数が同じチームは辞書順に並べられて"
+"おり、その順序はチームのランキングに一切関係がありません。また、"
+"サイレントラウンドの結果は含めていません。"
 
 #: standings/templates/speaker_standings.html:7
 msgid ""
 "Note that speakers are being sorted by their <strong>average score</strong>."
 msgstr ""
+"スピーカーは<strong>スコアの平均値</strong>で並び替えられていることに注意して"
+"下さい。"
 
 #: standings/templates/speaker_standings.html:9
 msgid ""
@@ -203,6 +211,9 @@ msgid ""
 "Any speaker who misses a single debate will be severely punished in these "
 "rankings."
 msgstr ""
+"スピーカーは<strong>スコアの合計値</strong>で並び替えられていることに注意して"
+"下さい。試合を行わなかったラウンドのあるスピーカーは、点数が低くなることが"
+"あります。"
 
 #: standings/templates/speaker_standings.html:14
 #, python-format
@@ -210,6 +221,8 @@ msgid ""
 "Also, speakers can miss up to %(count)s debates before they are omitted from "
 "the speaker tab."
 msgstr ""
+"また、%(count)s試合までであれば、試合を行わなくてもスピーカータブから削除"
+"されません。"
 
 #: standings/templates/speaker_standings.html:19
 #, python-format
@@ -218,49 +231,52 @@ msgid ""
 "class=\"alert-link\">Standings section of this tournament's configuration</"
 "a>."
 msgstr ""
+"これらの設定は<a href=\"%(standings_config_url)s\" class=\"alert-link\">"
+"この大会のランキングの設定で</a>変更できます。"
 
 #: standings/templates/standings_menu.html:7
 msgid "Overview"
-msgstr ""
+msgstr "概要"
 
 #: standings/templates/standings_menu.html:11
 msgid "Teams"
-msgstr ""
+msgstr "チーム"
 
 #: standings/templates/standings_menu.html:16
 msgid "Divisions"
-msgstr ""
+msgstr "ディビジョン"
 
 #: standings/templates/standings_menu.html:21
 msgid "Speakers"
-msgstr ""
+msgstr "スピーカー"
 
 #: standings/templates/standings_menu.html:26
 msgid "Replies"
-msgstr ""
+msgstr "リプライ"
 
 #: standings/templates/standings_menu.html:32
 #, python-format
 msgid "%(category_name)s Speakers"
-msgstr ""
+msgstr "%(category_name)sスピーカー"
 
 #: standings/templates/standings_menu.html:44
 msgid "Motions Balance"
-msgstr ""
+msgstr "モーションバランス"
 
 #: standings/templates/standings_menu.html:48
 msgid "Diversity Overview"
-msgstr ""
+msgstr "ダイバーシティ概要"
 
 #: standings/templates/standings_motions.html:31
 msgid "View Info Slide"
-msgstr ""
+msgstr "インフォスライドを見る"
 
 #: standings/views.py:92
 #, python-format
 msgid ""
 "<p>There was an error generating the standings: <em>%(message)s</em></p>"
 msgstr ""
+"<p>ランキング作成時にエラーが発生しました：<em>%(message)s</em></p>"
 
 #: standings/views.py:97
 #, python-format
@@ -270,69 +286,72 @@ msgid ""
 "this issue persists and you're not sure how to fix it, please contact the "
 "developers.</p>"
 msgstr ""
+"<p><a href=\"%(standings_options_url)s\" class=\"alert-link\">セットアップの"
+"セクション下にあるランキングの設定</a>をもう一度確認して下さい。この問題が改善"
+"されず、解決方法が分からない場合は、開発者に連絡して下さい。</p>"
 
 #: standings/views.py:105
 msgid "<p>The tab director will need to resolve this issue.</p>"
-msgstr ""
+msgstr "<p>タブの管理者がこの問題を解決する必要があります。</p>"
 
 #. Translators: 'title' is the main title; "(Top 15 Only)" is just a suffix
 #: standings/views.py:169
 #, python-format
 msgid "%(title)s (Top %(limit)d Only)"
-msgstr ""
+msgstr "%(title)s（上位%(limit)dまで）"
 
 #: standings/views.py:196 standings/views.py:391
 msgid ""
 "The tab can't be displayed because all rounds so far in this tournament are "
 "silent."
-msgstr ""
+msgstr "この大会のラウンドは全てサイレントであるため、タブは表示されません。"
 
 #: standings/views.py:253
 msgid "Speaker Standings"
-msgstr ""
+msgstr "スピーカーランキング"
 
 #: standings/views.py:289
 msgid "Speaker Tab"
-msgstr ""
+msgstr "スピーカータブ"
 
 #: standings/views.py:307
 #, python-format
 msgid "%(category)s Speaker Standings"
-msgstr ""
+msgstr "%(category)sスピーカーランキング"
 
 #: standings/views.py:325
 #, python-format
 msgid "%(category)s Speaker Tab"
-msgstr ""
+msgstr "%(category)sスピーカータブ"
 
 #: standings/views.py:339
 msgid "Reply Speaker Standings"
-msgstr ""
+msgstr "リプライスピーカーランキング"
 
 #: standings/views.py:371
 msgid "Reply Speaker Tab"
-msgstr ""
+msgstr "リプライスピーカータブ"
 
 #: standings/views.py:383
 msgid "Team Standings"
-msgstr ""
+msgstr "チームランキング"
 
 #: standings/views.py:448
 msgid "Division Standings"
-msgstr ""
+msgstr "ディビジョンランキング"
 
 #: standings/views.py:458
 msgid "Team Tab"
-msgstr ""
+msgstr "チームタブ"
 
 #: standings/views.py:474
 msgid "Motions Tab"
-msgstr ""
+msgstr "モーションタブ"
 
 #: standings/views.py:517
 msgid "Current Team Standings"
-msgstr ""
+msgstr "現在のチームランキング"
 
 #: standings/views.py:542
 msgid "Points"
-msgstr ""
+msgstr "点"
