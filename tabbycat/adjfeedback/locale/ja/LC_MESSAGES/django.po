@@ -31,11 +31,11 @@ msgid_plural ""
 "%(count)d feedback submissions were marked as confirmed. Note that this may "
 "have caused other feedback submissions to be marked as unconfirmed."
 msgstr[0] ""
-"1つのエバリュエーションシートが「確認済」とマークされました。これにより、"
-"他のエバリュエーションシートが「未確認」とマークされることがあります。"
+"1つのフィードバックが「確認済」とマークされました。これにより、"
+"他のフィードバックが「未確認」とマークされることがあります。"
 msgstr[1] ""
-"%(count)dつのエバリュエーションシートが「確認済」とマークされました。"
-"これにより、他のエバリュエーションシートが「未確認」とマークされることが"
+"%(count)dつのフィードバックが「確認済」とマークされました。"
+"これにより、他のフィードバックが「未確認」とマークされることが"
 "あります。"
 
 #: adjfeedback/admin.py:113
@@ -48,24 +48,24 @@ msgid_plural ""
 "because other feedback submissions that conflict with them were also marked "
 "as confirmed."
 msgstr[0] ""
-"1つのエバリュエーションシートを「確認済」とマークできませんでした。おそらく"
-"「確認済」とマークされている他のエバリュエーションシートと競合していることが"
+"1件のフィードバックを「確認済」とマークできませんでした。おそらく"
+"「確認済」とマークされている他のフィードバックと競合していることが"
 "原因です。"
 msgstr[1] ""
-"%(count)dつのエバリュエーションシートを「確認済」とマークできませんでした。"
-"おそらく「確認済」とマークされている他のエバリュエーションシートと競合している"
+"%(count)d件のフィードバックを「確認済」とマークできませんでした。"
+"おそらく「確認済」とマークされている他のフィードバックと競合している"
 "ことが原因です。"
 
 #: adjfeedback/admin.py:126
 #, python-format
 msgid "1 feedback submission was marked as unconfirmed."
 msgid_plural "%(count)d feedback submissions were marked as unconfirmed."
-msgstr[0] "1つのエバリュエーションシートを「未確認」とマークしました。"
-msgstr[1] "%(count)dつのエバリュエーションシートを「未確認」とマークしました。"
+msgstr[0] "1件のフィードバックを「未確認」とマークしました。"
+msgstr[1] "%(count)dつのフィードバックを「未確認」とマークしました。"
 
 #: adjfeedback/apps.py:7
 msgid "Adjudicator Feedback"
-msgstr "ジャッジエバリュエーション"
+msgstr "ジャッジフィードバック"
 
 #: adjfeedback/forms.py:22
 msgid "chair"
@@ -163,7 +163,7 @@ msgstr "質問"
 
 #: adjfeedback/models.py:32
 msgid "feedback"
-msgstr "エバリュエーション"
+msgstr "フィードバック"
 
 #: adjfeedback/models.py:43 adjfeedback/models.py:51 adjfeedback/models.py:59
 #: adjfeedback/models.py:67
@@ -172,35 +172,35 @@ msgstr "回答"
 
 #: adjfeedback/models.py:46
 msgid "adjudicator feedback boolean answer"
-msgstr "ジャッジエバリュエーション（はい・いいえで回答）"
+msgstr "ジャッジフィードバック（はい・いいえで回答）"
 
 #: adjfeedback/models.py:47
 msgid "adjudicator feedback boolean answers"
-msgstr "ジャッジエバリュエーション（はい・いいえで回答）"
+msgstr "ジャッジフィードバック（はい・いいえで回答）"
 
 #: adjfeedback/models.py:54
 msgid "adjudicator feedback integer answer"
-msgstr "ジャッジエバリュエーション（整数値で回答）"
+msgstr "ジャッジフィードバック（整数値で回答）"
 
 #: adjfeedback/models.py:55
 msgid "adjudicator feedback integer answers"
-msgstr "ジャッジエバリュエーション（整数値で回答）"
+msgstr "ジャッジフィードバック（整数値で回答）"
 
 #: adjfeedback/models.py:62
 msgid "adjudicator feedback float answer"
-msgstr "ジャッジエバリュエーション（小数値で回答）"
+msgstr "ジャッジフィードバック（小数値で回答）"
 
 #: adjfeedback/models.py:63
 msgid "adjudicator feedback float answers"
-msgstr "ジャッジエバリュエーション（小数値で回答）"
+msgstr "ジャッジフィードバック（小数値で回答）"
 
 #: adjfeedback/models.py:70
 msgid "adjudicator feedback string answer"
-msgstr "ジャッジエバリュエーション（テキストで回答）"
+msgstr "ジャッジフィードバック（テキストで回答）"
 
 #: adjfeedback/models.py:71
 msgid "adjudicator feedback string answers"
-msgstr "ジャッジエバリュエーション（テキストで回答）"
+msgstr "ジャッジフィードバック（テキストで回答）"
 
 #: adjfeedback/models.py:89
 msgid "checkbox"
@@ -275,7 +275,7 @@ msgstr "ジャッジから"
 
 #: adjfeedback/models.py:138
 msgid "Adjudicators should be asked this question (about other adjudicators)"
-msgstr "ジャッジからのエバリュエーションシートに記入される質問です"
+msgstr "ジャッジからのフィードバックに記入される質問です"
 
 #: adjfeedback/models.py:140
 msgid "from team"
@@ -283,7 +283,7 @@ msgstr "チームから"
 
 #: adjfeedback/models.py:141
 msgid "Teams should be asked this question"
-msgstr "チームからのエバリュエーションシートに記入される質問です"
+msgstr "チームからのフィードバックに記入される質問です"
 
 #: adjfeedback/models.py:144
 msgid "answer type"
@@ -301,7 +301,7 @@ msgstr "最小値"
 msgid ""
 "Minimum allowed value for numeric fields (ignored for text or boolean fields)"
 msgstr ""
-"数値で回答する質問で回答できる値の最大値（テキスト、二者択一回答の質問の場合、"
+"数値で回答する質問で回答できる値の最小値（テキスト、二者択一回答の質問の場合、"
 "この値は無視）"
 
 #: adjfeedback/models.py:152
@@ -329,11 +329,11 @@ msgstr ""
 
 #: adjfeedback/models.py:160
 msgid "adjudicator feedback question"
-msgstr "ジャッジエバリュエーションの質問"
+msgstr "ジャッジフィードバックの質問"
 
 #: adjfeedback/models.py:161
 msgid "adjudicator feedback questions"
-msgstr "ジャッジエバリュエーションの質問"
+msgstr "ジャッジフィードバックの質問"
 
 #: adjfeedback/models.py:214
 msgid "source adjudicator"
@@ -345,11 +345,11 @@ msgstr "提出チーム"
 
 #: adjfeedback/models.py:220
 msgid "adjudicator feedback"
-msgstr "ジャッジエバリュエーション"
+msgstr "ジャッジフィードバック"
 
 #: adjfeedback/models.py:221
 msgid "adjudicator feedbacks"
-msgstr "ジャッジエバリュエーション"
+msgstr "ジャッジフィードバック"
 
 #: adjfeedback/models.py:266
 msgid "Either the source adjudicator or source team wasn't specified."
@@ -368,19 +368,19 @@ msgid ""
 "There are some problems with this feedback submission. Please review and "
 "correct them."
 msgstr ""
-"エバリュエーションシートに誤りがあります。もう一度確認し、誤りを訂正して"
+"フィードバックに誤りがあります。もう一度確認し、誤りを訂正して"
 "下さい。"
 
 #: adjfeedback/templates/feedback_by_source.html:12
 #, python-format
 msgid "%(source_name)s hasn't submitted any feedback yet."
-msgstr "%(source_name)sからのエバリュエーションシートは提出されていません。"
+msgstr "%(source_name)sからのフィードバックはまだ提出されていません。"
 
 #: adjfeedback/templates/feedback_by_source.html:17
 #, python-format
 msgid "%(source_name)s hasn't received any feedback yet."
 msgstr ""
-"%(source_name)sへのエバリュエーションシートはまだ提出されていません。"
+"%(source_name)sへのフィードバックはまだ提出されていません。"
 
 #: adjfeedback/templates/feedback_overview.html:10
 #, python-format
@@ -389,8 +389,8 @@ msgid ""
 "configuration</a> allows and expects only chairs to submit feedback (on "
 "their panellists and trainees)."
 msgstr ""
-"現在の<a href=\"%(option_url)s\" class=\"alert-link\">フィードバック "
-"configuration</a> allows and expects only chairs to submit feedback (on "
+"現在の<a href=\"%(option_url)s\" class=\"alert-link\">フィードバック"
+"の設定</a>では、チェアのみがパネリストとトレイニーを評価できます。"
 
 #: adjfeedback/templates/feedback_overview.html:14
 #, python-format
@@ -399,6 +399,9 @@ msgid ""
 "configuration</a> allows and expects both chairs and panellists to submit "
 "feedback on each other, and also chairs to submit on trainees."
 msgstr ""
+"現在の<a href=\"%(option_url)s\" class=\"alert-link\">フィードバック"
+"の設定</a>では、チェアとパネリストがお互いを評価し、チェアはトレイニーを"
+"評価できます。"
 
 #: adjfeedback/templates/feedback_overview.html:20
 #, python-format
@@ -407,6 +410,9 @@ msgid ""
 "configuration</a> allows and expects all adjudicators (including trainees) "
 "to submit feedback on every other member of the panel (including trainees)."
 msgstr ""
+"現在の<a href=\"%(option_url)s\" class=\"alert-link\">フィードバック"
+"の設定</a>では、トレイニーを含めた全てのジャッジが自分以外の全ジャッジ"
+"（トレイニーを含む）を評価できます。"
 
 #: adjfeedback/templates/feedback_overview.html:31
 #, python-format
@@ -425,7 +431,19 @@ msgid_plural ""
 "score range, you can configure this in <a href=\"%(feedback_settings_url)s\" "
 "class=\"alert-link\"> feedback settings</a>."
 msgstr[0] ""
+"<strong>%(nadjs_outside_range)s名のジャッジ</strong>のスコアが<strong>"
+"設定範囲外</strong>となっています。現在のスコアレンジは%(min_score)sから"
+"%(max_score)sまでです。ジャッジ自動アロケーションに支障をきたす可能性が"
+"あるため、もしよりスコアレンジをより広くしたい場合、<a href=\""
+"%(feedback_settings_url)s\" class=\"alert-link\">フィードバックの設定</a>"
+"で設定し直して下さい。"
 msgstr[1] ""
+"<strong>%(nadjs_outside_range)s名のジャッジ</strong>のスコアが<strong>"
+"設定範囲外</strong>となっています。現在のスコアレンジは%(min_score)sから"
+"%(max_score)sまでです。ジャッジ自動アロケーションに支障をきたす可能性が"
+"あるため、もしよりスコアレンジをより広くしたい場合、<a href=\""
+"%(feedback_settings_url)s\" class=\"alert-link\">フィードバックの設定</a>"
+"で設定し直して下さい。"
 
 #: adjfeedback/templates/overview_breakdowns.html:13
 #, python-format
@@ -436,20 +454,24 @@ msgid_plural ""
 "%(count)s adjudicators currently have a score equal to or above %(min)s and "
 "below %(max)s. That is %(percent)s%% of the adjudicator pool."
 msgstr[0] ""
+"%(count)s名のジャッジのスコアが%(min)s以上%(max)s未満です。この人数はジャッジ"
+"全体の%(percent)s%%になります。"
 msgstr[1] ""
+"%(count)s名のジャッジのスコアが%(min)s以上%(max)s未満です。この人数はジャッジ"
+"全体の%(percent)s%%になります。"
 
 #: adjfeedback/templates/overview_breakdowns.html:27
 #, python-format
 msgid "Score Distributions (range is %(min_score)s–%(max_score)s)"
-msgstr ""
+msgstr "スコア分布（範囲：%(min_score)s-%(max_score)s）"
 
 #: adjfeedback/templates/overview_breakdowns.html:43
 msgid "Test"
-msgstr ""
+msgstr "テスト"
 
 #: adjfeedback/templates/overview_breakdowns.html:49
 msgid "Feedback"
-msgstr ""
+msgstr "フィードバック"
 
 #: adjfeedback/templates/overview_breakdowns.html:53
 #, python-format
@@ -458,10 +480,12 @@ msgid ""
 "is set on a per-round basis. This is the mix for the current round "
 "(%(round)s)."
 msgstr ""
+"フィードバックとテストのスコアの割合は、各ラウンドごとに設定されます。"
+"これはこのラウンド（%(round)s）での割合です。"
 
 #: adjfeedback/templates/overview_breakdowns.html:57
 msgid "Score Aspects"
-msgstr ""
+msgstr "スコアアスペクト"
 
 #: adjfeedback/templates/overview_breakdowns.html:68
 #, python-format
@@ -472,27 +496,33 @@ msgid_plural ""
 "There are %(c_chairs)s debates per round, so there need to be %(c_chairs)s "
 "chairs."
 msgstr[0] ""
+"ラウンド当たり%(c_chairs)sつの試合が行われるため、チェアは%(c_chairs)s名に"
+"なります。"
 msgstr[1] ""
+"ラウンド当たり%(c_chairs)sつの試合が行われるため、チェアは%(c_chairs)s名に"
+"なります。"
 
 #: adjfeedback/templates/overview_breakdowns.html:73
 #, python-format
 msgid "%(c_chairs)s chair"
 msgid_plural "%(c_chairs)s chairs"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "チェア%(c_chairs)s名"
+msgstr[1] "チェア%(c_chairs)s名"
 
 #: adjfeedback/templates/overview_breakdowns.html:81
 msgid ""
 "All adjudicators with a score high enough to vote, but who aren't allocated "
 "as chairs, are allocated as panellists by the auto-allocator."
 msgstr ""
+"スコアが高いにも拘らずチェアに割り当てられていないジャッジは、ジャッジ自動"
+"アロケーションの際、パネリストに割り当てられます。"
 
 #: adjfeedback/templates/overview_breakdowns.html:85
 #, python-format
 msgid "%(c_panellists)s panellist"
 msgid_plural "%(c_panellists)s panellists"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "パネリスト%(c_panellists)s名"
+msgstr[1] "パネリスト%(c_panellists)s名"
 
 #: adjfeedback/templates/overview_breakdowns.html:93
 #, python-format
@@ -501,22 +531,25 @@ msgid ""
 "is less than the 'minimum voting score' (currently %(min_voting)s) set in "
 "this tournament's Draw Rules configuration."
 msgstr ""
+"この大会の「対戦表」の設定で設定された「投票ジャッジのスコア下限」（現在"
+"%(min_voting)s点）を下回るジャッジは、ジャッジ自動アロケーションの際、"
+"トレイニーに割り当てられます。"
 
 #: adjfeedback/templates/overview_breakdowns.html:98
 #, python-format
 msgid "%(c_trainees)s trainee"
 msgid_plural "%(c_trainees)s trainees"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "パネリスト%(c_trainees)s名"
+msgstr[1] "パネリスト%(c_trainees)s名"
 
 #: adjfeedback/templates/overview_breakdowns.html:106
 #, python-format
 msgid "Auto-Allocate Distributions (%(min_voting_score)s to vote)"
-msgstr ""
+msgstr "自動アロケーション分布（%(min_voting_score)s点以上てチェア・パネル）"
 
 #: adjfeedback/views.py:165 adjfeedback/views.py:191 adjfeedback/views.py:208
 #, python-format
 msgid "%(count)d feedback"
 msgid_plural "%(count)d feedbacks"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(count)d件のフィードバック"
+msgstr[1] "%(count)d件のフィードバック"
