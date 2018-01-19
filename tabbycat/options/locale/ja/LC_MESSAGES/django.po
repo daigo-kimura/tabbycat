@@ -110,7 +110,7 @@ msgstr ""
 
 #: options/dynamic_preferences_registry.py:100
 msgid "Minimum adjudicator score to vote"
-msgstr "チェア／パネリストになれるジャッジのスコア下限"
+msgstr "投票ジャッジのスコア下限"
 
 #: options/dynamic_preferences_registry.py:108
 msgid "Penalty applied by auto-allocator for adjudicator-team conflict"
