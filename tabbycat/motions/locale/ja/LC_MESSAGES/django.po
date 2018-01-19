@@ -41,7 +41,7 @@ msgstr "モーション全文 例：「死刑制度を廃止する」"
 
 #: motions/models.py:15
 msgid "reference"
-msgstr "リファレンス"
+msgstr "参照名"
 
 #: motions/models.py:16
 msgid "Shortcode for the motion, e.g., \"Bananas\""
@@ -83,39 +83,39 @@ msgstr "モーション"
 
 #: motions/models.py:40
 msgid "debate team"
-msgstr ""
+msgstr "試合チーム"
 
 #: motions/models.py:44
 msgid "preferences"
-msgstr ""
+msgstr "選択"
 
 #: motions/models.py:46
 msgid "ballot submission"
-msgstr ""
+msgstr "提出バロット"
 
 #: motions/models.py:50
 msgid "debate team motion preference"
-msgstr ""
+msgstr "試合チームのモーション選択"
 
 #: motions/models.py:51
 msgid "debate team motion preferences"
-msgstr ""
+msgstr "試合チームのモーション選択"
 
 #: motions/templates/assign.html:4 motions/templates/assign.html:5
 msgid "Assign Motions"
-msgstr ""
+msgstr "割り当てモーション"
 
 #: motions/templates/assign.html:9
 msgid "Back to Display"
-msgstr ""
+msgstr "表示にもどる"
 
 #: motions/templates/assign.html:42
 msgid "Save Motion Assignments"
-msgstr ""
+msgstr "モーション割り当てを保存"
 
 #: motions/templates/balance_results_2vs2.html:22
 msgid "No teams debated this topic"
-msgstr ""
+msgstr "このモーションを選択したチームはいません"
 
 #: motions/templates/balance_results_bp.html:25
 msgid "average points per position"
@@ -127,63 +127,63 @@ msgstr "結果分布"
 
 #: motions/templates/balance_results_bp.html:68
 msgid "No results for this topic"
-msgstr ""
+msgstr "このモーションに関する結果なし"
 
 #: motions/templates/balance_vetoes.html:22
 msgid "No teams vetoed this topic"
-msgstr ""
+msgstr "このモーションをビートしたチームはいません"
 
 #: motions/templates/motions_edit.html:4 motions/templates/motions_edit.html:10
 msgid "Edit Motion"
 msgid_plural "Edit Motions"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "モーションを編集"
+msgstr[1] "モーションを編集"
 
 #: motions/templates/motions_edit.html:18
 msgid "Display Draw"
-msgstr ""
+msgstr "対戦表表示"
 
 #: motions/templates/motions_edit.html:23
 msgid "Assign Motions to Divisions"
-msgstr ""
+msgstr "モーションをディビジョンに割り当て"
 
 #: motions/templates/motions_edit.html:61
 msgid "Save Motion"
 msgid_plural "Save Motions"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "モーションを保存"
+msgstr[1] "モーションを保存"
 
 #: motions/templates/public_motions.html:23
 msgid "View Info Slide"
-msgstr ""
+msgstr "インフォスライドを見る"
 
 #: motions/templates/public_motions.html:29
 msgid "There are no motions available for this round."
-msgstr ""
+msgstr "このラウンドで選択可能なモーションはありません。"
 
 #. Translators: Used when there are expected to be several motions per round (e.g. Australs)
 #: motions/templates/public_motions.html:33
 msgid "The motions for this round have not been released."
-msgstr ""
+msgstr "このラウンドのモーションはリリースされていません。"
 
 #. Translators: Used when there is expected to be one motion per round (e.g. WUDC)
 #: motions/templates/public_motions.html:36
 msgid "The motion for this round has not been released."
-msgstr ""
+msgstr "このラウンドのモーションはリリースされていません。"
 
 #: motions/templates/show.html:15
 #, python-format
 msgid "Reveal Motion for %(round_name)s"
 msgid_plural "Reveal Motions for %(round_name)s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(round_name)sのモーションを公開"
+msgstr[1] "%(round_name)sのモーションを公開"
 
 #: motions/templates/show.html:23
 #, python-format
 msgid "Reveal Info Slide for %(round_name)s"
 msgid_plural "Reveal Info Slides for %(round_name)s"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(round_name)sのインフォスライドを公開"
+msgstr[1] "%(round_name)sのインフォスライドを公開"
 
 #: motions/templates/show.html:40
 msgid "There are no motions for this round entered into Tabbycat."
