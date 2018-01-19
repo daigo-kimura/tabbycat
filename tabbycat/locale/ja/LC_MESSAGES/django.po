@@ -225,7 +225,7 @@ msgstr "スピーカー"
 
 #: templates/nav/admin_nav.html:157
 msgid "Replies"
-msgstr "リブライ"
+msgstr "リプライ"
 
 #: templates/nav/admin_nav.html:162
 #, python-format
@@ -272,7 +272,7 @@ msgstr "%(category_name)sタブ"
 
 #: templates/nav/public_nav.html:29
 msgid "Replies Tab"
-msgstr "リブライタブ"
+msgstr "リプライタブ"
 
 #: templates/nav/public_nav.html:34
 msgid "Adjudicator Tab"

@@ -61,25 +61,25 @@ msgstr "チームスコアの最大値"
 
 #: options/dynamic_preferences_registry.py:59
 msgid "Minimum allowed score for reply speeches"
-msgstr "リブライスピーチに対するスコアの最小値"
+msgstr "リプライスピーチに対するスコアの最小値"
 
 #: options/dynamic_preferences_registry.py:60
 msgid "Minimum reply score"
-msgstr "リブライスコアの最小値"
+msgstr "リプライスコアの最小値"
 
 #: options/dynamic_preferences_registry.py:68
 msgid "Maximum allowed score for reply speeches"
-msgstr "リブライスピーチに対するスコアの最大値"
+msgstr "リプライスピーチに対するスコアの最大値"
 
 #: options/dynamic_preferences_registry.py:69
 msgid "Maximum reply score"
-msgstr "リブライスコアの最大値"
+msgstr "リプライスコアの最大値"
 
 #: options/dynamic_preferences_registry.py:77
 msgid ""
 "Score steps allowed for reply speeches, e.g. full points (1) or half points "
 "(0.5)"
-msgstr "リブライスピーチに対するスコアの刻み"
+msgstr "リプライスピーチに対するスコアの刻み"
 
 #: options/dynamic_preferences_registry.py:78
 msgid "Reply score step"

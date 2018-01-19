@@ -245,7 +245,7 @@ msgstr "カテゴリ"
 #: utils/tables.py:583 utils/tables.py:585 utils/tables.py:659
 #: utils/tables.py:661
 msgid "Division"
-msgstr "区分"
+msgstr "ディビジョン"
 
 #: utils/tables.py:592
 msgid "Redacted"
