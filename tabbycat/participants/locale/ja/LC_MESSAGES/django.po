@@ -12,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -190,7 +190,7 @@ msgstr "代名詞"
 msgid ""
 "If printing ballots using Tabbycat, there is the option to pre-print pronouns"
 msgstr ""
-"Tabbycatを用いてスコアシートを印刷する場合、"
+"Tabbycatを用いてバロットを印刷する場合、"
 "あらかじめ代名詞を印刷しておくオプションがあります"
 
 #: participants/models.py:136
@@ -614,13 +614,13 @@ msgstr ""
 
 #: participants/templates/feedback_progress_panel.html:10
 msgid "Feedback Returns"
-msgstr "エバリュエーションシートの提出"
+msgstr "フィードバックの提出"
 
 #: participants/templates/feedback_progress_panel.html:17
 #, python-format
 msgid "Has submitted feedback for <strong>%(adjudicator)s</strong>"
 msgstr ""
-"<strong>%(adjudicator)s</strong>へのエバリュエーションシートを提出済"
+"<strong>%(adjudicator)s</strong>へのフィードバックを提出済"
 
 #: participants/templates/feedback_progress_panel.html:25
 #, python-format
@@ -629,30 +629,30 @@ msgid ""
 "(whoever gave the oral adjudication)"
 msgstr ""
 "<strong>%(adjudicators)s</strong>のうち、R4Dを行ったジャッジへの"
-"エバリュエーションシートを未提出"
+"フィードバックを未提出"
 
 #: participants/templates/feedback_progress_panel.html:30
 #, python-format
 msgid "Has not submitted feedback for <strong>%(adjudicator)s</strong>"
 msgstr ""
-"<strong>%(adjudicator)s</strong>へのエバリュエーションシートを未提出"
+"<strong>%(adjudicator)s</strong>へのフィードバックを未提出"
 
 #: participants/templates/feedback_progress_panel.html:39
 msgid "More feedback submissions than expected for this debate:"
 msgstr ""
-"提出されるべき以上のエバリュエーションシートが提出されています："
+"提出されるべき以上のフィードバックが提出されています："
 
 #: participants/templates/feedback_progress_panel.html:48
 #, python-format
 msgid "Unexpected feedback submission for <strong>%(adjudicator)s</strong>"
 msgstr ""
 "<strong>%(adjudicator)s</strong>への"
-"提出されるべきでないエバリュエーションシート"
+"提出されるべきでないフィードバック"
 
 #: participants/templates/feedback_progress_panel.html:55
 #, python-format
 msgid "%(participant_name)s doesn't have any feedback to submit."
-msgstr "%(participant_name)sが提出すべきエバリュエーションシートはありません。"
+msgstr "%(participant_name)sが提出すべきフィードバックはありません。"
 
 #: participants/templates/participants_subnav.html:6
 msgid "Participants List"

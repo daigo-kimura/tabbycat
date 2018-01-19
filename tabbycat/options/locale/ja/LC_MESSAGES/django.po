@@ -241,7 +241,7 @@ msgstr ""
 
 #: options/dynamic_preferences_registry.py:188
 msgid "Manually enter from ballot"
-msgstr "スコアシートを元に手動で割り当て"
+msgstr "バロットを元に手動で割り当て"
 
 #: options/dynamic_preferences_registry.py:195
 msgid ""
@@ -418,7 +418,7 @@ msgid ""
 "Used to inform available choices in the feedback forms for adjudicators "
 "(both online and printed) and feedback progress"
 msgstr ""
-"エバリュエーションシート、オンラインフィードバックフォーム"
+"フィードバックシート、オンラインフィードバックフォーム"
 "もしくはフィードバック提出状況ページでの被評価者の選択肢"
 
 #: options/dynamic_preferences_registry.py:339
@@ -446,7 +446,7 @@ msgid ""
 "Used to inform available choices in the feedback forms for teams (both "
 "online and printed) and feedback progress; this option is used by, e.g., UADC"
 msgstr ""
-"エバリュエーションシート、オンラインフィードバックフォーム"
+"フィードバックシート、オンラインフィードバックフォーム"
 "もしくはフィードバック提出状況ページでの被評価者の選択肢"
 
 #: options/dynamic_preferences_registry.py:357
@@ -480,28 +480,28 @@ msgstr "トレイニーの表示"
 
 #: options/dynamic_preferences_registry.py:383
 msgid "The location to return scoresheets to, printed on pre-printed ballots"
-msgstr "スコアシートに印字される"
+msgstr "この提出先はバロットに印字される"
 
 #: options/dynamic_preferences_registry.py:384
 msgid "Score return location"
-msgstr "スコアシート提出先"
+msgstr "バロット提出先"
 
 #: options/dynamic_preferences_registry.py:392
 msgid ""
 "The location to return feedback to, printed on pre-printed feedback forms"
-msgstr "エバリュエーションシートに印字される"
+msgstr "この提出先はフィードバックシートに印字される"
 
 #: options/dynamic_preferences_registry.py:393
 msgid "Feedback return location"
-msgstr "エバリュエーションシート提出先"
+msgstr "フィードバックシート提出先"
 
 #: options/dynamic_preferences_registry.py:401
 msgid "Any explanatory text needed to introduce the feedback form"
-msgstr "エバリュエーションシートの冒頭に説明文が必要な場合、ここに記入"
+msgstr "フィードバックシートの冒頭に説明文が必要な場合、ここに記入"
 
 #: options/dynamic_preferences_registry.py:402
 msgid "Feedback introduction/explanation"
-msgstr "エバリュエーションシートの説明文"
+msgstr "フィードバックシートの説明文"
 
 #: options/dynamic_preferences_registry.py:410
 #: options/templates/preferences_index.html:25
@@ -529,12 +529,12 @@ msgid ""
 "Whether panels submit a ballot each or a single ballot for the debate. Note: "
 "BP must use one per debate."
 msgstr ""
-"パネリストもスコアシートを提出するかどうか"
+"パネリストもバロットを提出するかどうか"
 "（BPでは「1つのディベートにつき1枚」を選択して下さい）"
 
 #: options/dynamic_preferences_registry.py:430
 msgid "Ballots per debate"
-msgstr "スコアシートの枚数"
+msgstr "バロットの枚数"
 
 #: options/dynamic_preferences_registry.py:434
 msgid "One ballot per voting adjudicator"
@@ -570,7 +570,7 @@ msgstr "リプライスピーチの採点"
 
 #: options/dynamic_preferences_registry.py:470
 msgid "Enables the motion veto field on ballots, to track veto statistics"
-msgstr "統計情報収集のため、スコアシートにビートしたモーションを記入させる"
+msgstr "統計情報収集のため、バロットにビートしたモーションを記入させる"
 
 #: options/dynamic_preferences_registry.py:471
 msgid "Motion vetoes"
@@ -741,12 +741,11 @@ msgid ""
 "Enables public display of every adjudicator's ballot. Intended for use after "
 "the tournament."
 msgstr ""
-"スコアシートを誰でも閲覧可能にする"
-"（大会後の使用を想定）"
+"バロットを誰でも閲覧可能にする（大会後の使用を想定）"
 
 #: options/dynamic_preferences_registry.py:643
 msgid "Release ballots to public"
-msgstr "スコアシートの公開"
+msgstr "バロットの公開"
 
 #: options/dynamic_preferences_registry.py:651
 msgid ""
@@ -767,11 +766,11 @@ msgstr "データ入力"
 
 #: options/dynamic_preferences_registry.py:665
 msgid "Whether adjudicators can submit ballots themselves, and how they do so"
-msgstr "ジャッジにオンラインでスコアシートを入力させる方法"
+msgstr "ジャッジにオンラインでバロットを提出させる方法"
 
 #: options/dynamic_preferences_registry.py:666
 msgid "Ballot submissions from adjudicators"
-msgstr "ジャッジによるスコアシート入力"
+msgstr "ジャッジによるバロット提出"
 
 #: options/dynamic_preferences_registry.py:670
 #: options/dynamic_preferences_registry.py:684
@@ -790,11 +789,11 @@ msgstr "公開の入力フォームを使用"
 
 #: options/dynamic_preferences_registry.py:679
 msgid "Whether participants can submit feedback themselves, and how they do so"
-msgstr "大会参加者にオンラインでエバリュエーションシートを入力させる方法"
+msgstr "大会参加者にオンラインでフィードバックを提出させる方法"
 
 #: options/dynamic_preferences_registry.py:680
 msgid "Feedback submissions from participants"
-msgstr "大会参加者のエバリュエーションシート入力"
+msgstr "大会参加者のフィードバック提出"
 
 #: options/dynamic_preferences_registry.py:693
 msgid ""
@@ -822,8 +821,7 @@ msgstr "公開の入力フォームのパスワード"
 #: options/dynamic_preferences_registry.py:711
 msgid ""
 "Bypasses double checking by setting ballots to be automatically confirmed"
-msgstr ""
-"スコアシートを自動的に「確認済」状態にする"
+msgstr "バロットを自動的に「確認済」状態にする"
 
 #: options/dynamic_preferences_registry.py:712
 msgid "Bypass double checking"
@@ -831,7 +829,7 @@ msgstr "ダブルチェックを行わない"
 
 #: options/dynamic_preferences_registry.py:720
 msgid "If checked, ballots require a motion to be entered"
-msgstr "スコアシート入力時にモーションの情報も入力"
+msgstr "バロット入力時にモーションの情報も入力"
 
 #: options/dynamic_preferences_registry.py:721
 msgid "Enable motions"
@@ -844,8 +842,8 @@ msgid ""
 "to the public and for printing ballots)."
 msgstr ""
 "公開ページで公開される前に対戦表、モーションを表示するページへのアクセス権限"
-"（これらのページは対戦表、モーションをプロジェクターで映す際や、"
-"スコアシートを印刷する際に利用）"
+"（これらのページは対戦表、モーションをプロジェクターで映す際や、バロットを"
+"印刷する際に利用）"
 
 #: options/dynamic_preferences_registry.py:732
 msgid "Assistant user access"
@@ -977,11 +975,11 @@ msgstr "ジャッジブレイクを公開"
 
 #: options/dynamic_preferences_registry.py:849
 msgid "Enables the public page detailing who has unsubmitted feedback"
-msgstr "誰がエバリュエーションシートを提出していないか公開"
+msgstr "誰がフィードバックを提出していないか公開"
 
 #: options/dynamic_preferences_registry.py:850
 msgid "Enable public view of unsubmitted feedback"
-msgstr "未提出のエバリュエーションシートを公開"
+msgstr "未提出のフィードバックを公開"
 
 #: options/dynamic_preferences_registry.py:857
 #: options/templates/preferences_index.html:61
