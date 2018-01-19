@@ -12,33 +12,36 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 #: printing/templates/feedback_list.html:5
 msgid "Feedback Forms"
-msgstr ""
+msgstr "フィードバックフォーム"
 
 #: printing/templates/feedback_list.html:7
 #, python-format
 msgid "Printable Feedback Forms for %(round_name)s"
-msgstr ""
+msgstr "%(round_name)sの印刷可能なフィードバックフォーム"
 
 #: printing/templates/feedback_list.html:14
 msgid ""
 "No feedback questions have been added for either teams or adjudicators to "
 "answer."
 msgstr ""
+"フィードバックに記入するチームまたはジャッジへの質問が追加されていません。"
 
 #: printing/templates/feedback_list.html:16
 msgid "No feedback questions have been added for teams to answer."
 msgstr ""
+"フィードバックに記入するチームへの質問が追加されていません。"
 
 #: printing/templates/feedback_list.html:18
 msgid "No feedback questions have been added for adjudicators to answer."
 msgstr ""
+"フィードバックに記入するジャッジへの質問が追加されていません。"
 
 #: printing/templates/feedback_list.html:20
 #, python-format
@@ -48,6 +51,10 @@ msgid ""
 "a> for information on how to add these (otherwise these forms will be quite "
 "bare)."
 msgstr ""
+"%(first_sentence)s Check the <a href=\"http://tabbycat.readthedocs.io/en/"
+"stable/features/adjudicator-feedback.html\" target=\"_blank\">documentation</"
+"a> for information on how to add these (otherwise these forms will be quite "
+"bare)."
 
 #: printing/templates/printables_list.html:9
 msgid ""
@@ -56,16 +63,17 @@ msgid ""
 "and turn on <strong>background graphics</strong>. Works best in Safari or "
 "Firefox."
 msgstr ""
+"印刷もしくはPDFの保存はCtrl+Pで行ってください。<strong>適切な向き</strong>で、<strong>ヘッダーフッターを除き</strong>、<strong>「背景をプリント」をオン</strong>にしてください。SafariとFirefoxでの印刷を推奨します。"
 
 #: printing/templates/scoresheet_list.html:5
 msgid "Scoresheets"
-msgstr ""
+msgstr "スコアシート"
 
 #: printing/templates/scoresheet_list.html:7
 #, python-format
 msgid "Printable Scoresheets for %(round_name)s"
-msgstr ""
+msgstr "%(round_name)sの印刷可能なスコアシート"
 
 #: printing/views.py:121 printing/views.py:125
 msgid "Team"
-msgstr ""
+msgstr "チーム"
