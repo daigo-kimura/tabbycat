@@ -81,11 +81,11 @@ msgstr "フォームに誤りがあります！"
 #: templates/footer.html:13
 #, python-format
 msgid "%(tournament)s runs on"
-msgstr ""
+msgstr "%(tournament)sの利用ソフト"
 
 #: templates/footer.html:15
 msgid "This site runs on"
-msgstr ""
+msgstr "この大会の利用ソフト"
 
 #: templates/footer.html:21
 msgid ""
@@ -118,7 +118,7 @@ msgstr ""
 
 #: templates/footer.html:41
 msgid "Still timing debates with the stopwatch app?"
-msgstr "まだ、ストップウォッチアプリを使っているのですか？"
+msgstr "まだ、ストップウォッチアプリを使っているんですか？"
 
 #: templates/footer.html:43
 #, python-format
@@ -139,13 +139,15 @@ msgstr ""
 
 #: templates/footer.html:52
 msgid "Need ballots?"
-msgstr "スコアシートが必要？"
+msgstr "バロットが必要？"
 
 #: templates/footer.html:54
 msgid ""
 "You can <a href=\"https://tabbycatdebate.github.io/debate-ballots/\" target="
 "\"_blank\"> customise and print</a> great ballots from your browser."
 msgstr ""
+"ブラウザで簡単に<a href=\"https://tabbycatdebate.github.io/debate-ballots/\""
+"target=\"_blank\">バロットをカスタマイズ・印刷</a>出来ます。"
 
 #: templates/footer.html:67
 msgid "GitHub"
@@ -161,7 +163,7 @@ msgstr "このソフトを支援"
 
 #: templates/footer.html:85
 msgid "Facebook"
-msgstr "Facebook"
+msgstr "フェイスブック"
 
 #: templates/footer.html:91
 msgid "Set Up A Copy"
@@ -178,69 +180,69 @@ msgstr "セットアップ"
 
 #: templates/nav/admin_nav.html:57
 msgid "Configuration"
-msgstr ""
+msgstr "設定"
 
 #: templates/nav/admin_nav.html:61
 msgid "Import Data"
-msgstr ""
+msgstr "データをインポート"
 
 #: templates/nav/admin_nav.html:65 templates/nav/public_nav.html:151
 msgid "Participants"
-msgstr ""
+msgstr "参加者"
 
 #: templates/nav/admin_nav.html:70
 msgid "Private URLs"
-msgstr ""
+msgstr "プライベートURL"
 
 #: templates/nav/admin_nav.html:73
 msgid "Edit Database"
-msgstr ""
+msgstr "データベースを編集"
 
 #: templates/nav/admin_nav.html:83 templates/nav/public_nav.html:136
 msgid "Sides"
-msgstr ""
+msgstr "サイド"
 
 #: templates/nav/admin_nav.html:95 templates/nav/admin_nav.html:148
 #: templates/nav/public_nav.html:126
 msgid "Divisions"
-msgstr ""
+msgstr "区画"
 
 #: templates/nav/admin_nav.html:104
 msgid "Feedback"
-msgstr ""
+msgstr "フィードバック"
 
 #: templates/nav/admin_nav.html:134 templates/nav/public_nav.html:141
 msgid "Standings"
-msgstr ""
+msgstr "ランキング"
 
 #: templates/nav/admin_nav.html:144
 msgid "Teams"
-msgstr ""
+msgstr "チーム"
 
 #: templates/nav/admin_nav.html:152
 msgid "Speakers"
-msgstr ""
+msgstr "スピーカー"
 
 #: templates/nav/admin_nav.html:157
 msgid "Replies"
-msgstr ""
+msgstr "リブライ"
 
 #: templates/nav/admin_nav.html:162
 #, python-format
 msgid "%(category_name)s Speakers"
-msgstr ""
+msgstr "%(category_name)sスピーカー"
 
 #: templates/nav/admin_nav.html:168 templates/nav/public_nav.html:131
 msgid "Motions"
-msgstr ""
+msgstr "モーション"
 
 #: templates/nav/admin_nav.html:171 templates/nav/public_nav.html:146
 msgid "Diversity"
-msgstr ""
+msgstr "ダイバーシティ"
 
 #: templates/nav/admin_nav.html:184
 msgid "Breaks"
-msgstr ""
+msgstr "ブレイク"
 
 #: templates/nav/admin_nav.html:195
 #, python-format
@@ -249,187 +251,195 @@ msgstr ""
 
 #: templates/nav/admin_nav.html:214
 msgid "Log Out"
-msgstr ""
+msgstr "ログアウト"
 
 #: templates/nav/assistant_nav.html:11
 msgid "Check In Ballots"
-msgstr ""
+msgstr "バロットのチェックイン"
 
 #: templates/nav/public_nav.html:6
 msgid "Team Tab"
-msgstr ""
+msgstr "チームタブ"
 
 #: templates/nav/public_nav.html:11
 msgid "Speaker Tab"
-msgstr ""
+msgstr "スピーカータブ"
 
 #: templates/nav/public_nav.html:19
 #, python-format
 msgid "%(category_name)s Tab"
-msgstr ""
+msgstr "%(category_name)sタブ"
 
 #: templates/nav/public_nav.html:29
 msgid "Replies Tab"
-msgstr ""
+msgstr "リブライタブ"
 
 #: templates/nav/public_nav.html:34
 msgid "Adjudicator Tab"
-msgstr ""
+msgstr "ジャッジタブ"
 
 #: templates/nav/public_nav.html:39
 msgid "Motions Tab"
-msgstr ""
+msgstr "モーションタブ"
 
 #: templates/nav/public_nav.html:56
 msgid "Draws"
-msgstr ""
+msgstr "対戦表"
 
 #: templates/nav/public_nav.html:69
 msgid "View All"
-msgstr ""
+msgstr "全て見る"
 
 #: templates/nav/public_nav.html:82 templates/nav/round_panel.html:61
 msgid "Results"
-msgstr ""
+msgstr "結果"
 
 #: templates/nav/public_nav.html:104
 msgid "Break"
-msgstr ""
+msgstr "ブレイク"
 
 #: templates/nav/public_nav.html:116
 msgid "Adjudicators"
-msgstr ""
+msgstr "ジャッジ"
 
 #: templates/nav/public_nav.html:156
 msgid "Feedback Progress"
-msgstr ""
+msgstr "フィードバック提出状況"
 
 #: templates/nav/public_nav.html:161
 msgid "Enter Ballot"
-msgstr ""
+msgstr "バロットを入力"
 
 #: templates/nav/public_nav.html:166
 msgid "Enter Feedback"
-msgstr ""
+msgstr "フィードバックを入力"
 
 #: templates/nav/round_panel.html:28
 msgid "Check-Ins"
-msgstr ""
+msgstr "チェックイン"
 
 #: templates/nav/round_panel.html:39
 msgid "Draw"
-msgstr ""
+msgstr "対戦表"
 
 #: templates/nav/round_panel.html:51
 msgid "Display"
-msgstr ""
+msgstr "表示"
 
 #: templates/registration/login.html:4
 msgctxt "page title"
 msgid "Login"
-msgstr ""
+msgstr "ログイン"
 
 #: templates/registration/login.html:29
 msgctxt "page title"
 msgid "Log in to Tabbycat"
-msgstr ""
+msgstr "Tabbycatにログイン"
 
 #: templates/registration/login.html:37
 msgid "Your username and password didn't match."
-msgstr ""
+msgstr "ユーザー名とパスワードのどちらかに誤りがあります。"
 
 #: templates/registration/login.html:46
 msgid ""
 "Your account doesn't have access to this page. To proceed, please log in "
 "with an account that has access."
 msgstr ""
+"あなたのアカウントではこのページにアクセスできません。アクセス権のある"
+"アカウントにログインしてから、再度実行して下さい。"
 
 #: templates/registration/login.html:49
 msgid "Please log in to see this page."
-msgstr ""
+msgstr "このページを見るにはログインする必要があります。"
 
 #: templates/registration/password_change_done.html:4
 #: templates/registration/password_change_done.html:5
 msgctxt "page title"
 msgid "Password changed"
-msgstr ""
+msgstr "パスワード変更完了"
 
 #: templates/registration/password_change_done.html:11
 msgid "Your password has been changed."
-msgstr ""
+msgstr "パスワードが変更されました。"
 
 #: templates/registration/password_change_done.html:14
 msgid "Go to the home page"
-msgstr ""
+msgstr "メインページに移動"
 
 #: templates/registration/password_change_form.html:4
 #: templates/registration/password_change_form.html:19
 msgctxt "page title"
 msgid "Password Change"
-msgstr ""
+msgstr "パスワード変更"
 
 #: templates/registration/password_change_form.html:20
 msgid "Please enter your old password, then enter a new one."
-msgstr ""
+msgstr "現在のパスワードを入力後、新しいパスワードを入力して下さい。"
 
 #: templates/registration/password_change_form.html:25
 #: templates/registration/password_reset_confirm.html:38
 msgctxt "button"
 msgid "Change my password"
-msgstr ""
+msgstr "パスワードを変更"
 
 #: templates/registration/password_change_form.html:26
 msgid "Cancel and go back to the site home page"
-msgstr ""
+msgstr "キャンセルしてメインページに戻る"
 
 #: templates/registration/password_reset_complete.html:4
 #: templates/registration/password_reset_complete.html:5
 msgctxt "page title"
 msgid "Password reset complete"
-msgstr ""
+msgstr "パスワードリセット完了"
 
 #: templates/registration/password_reset_complete.html:16
 msgid "Your password has been reset."
-msgstr ""
+msgstr "パスワードがリセットされました。"
 
 #. Translators: This text appears on a button that takes the user to the login page after a password reset.
 #: templates/registration/password_reset_complete.html:23
 msgid "Go to the login page"
-msgstr ""
+msgstr "ログインページに進む"
 
 #: templates/registration/password_reset_confirm.html:4
 #: templates/registration/password_reset_confirm.html:14
 msgctxt "page title"
 msgid "Password Reset Confirmation"
-msgstr ""
+msgstr "パスワードリセット確認"
 
 #: templates/registration/password_reset_confirm.html:26
 msgid "Please enter a new password (twice):"
-msgstr ""
+msgstr "新しいパスワードを入力して下さい（2回）："
 
 #: templates/registration/password_reset_confirm.html:44
 msgid ""
 "The password reset link was invalid, possibly because it has already been "
 "used.  Please request a new password reset."
 msgstr ""
+"このパスワードリセットページのURLは無効です。既に使用された可能性が"
+"あります。もう一度パスワードリセットのリクエストをして下さい。"
 
 #: templates/registration/password_reset_done.html:4
 #: templates/registration/password_reset_done.html:5
 msgctxt "page title"
 msgid "Password reset e-mail sent"
-msgstr ""
+msgstr "パスワードリセットのメールを送信"
 
 #: templates/registration/password_reset_done.html:16
 msgid ""
 "We've e-mailed you instructions for setting your password, if an account "
 "exists with the e-mail address you entered. You should receive them shortly."
 msgstr ""
+"あなたが登録したメールアドレスに、パスワード再設定のためのメールを送信"
+"しました。メールが届くまで数分程度お待ち下さい。"
 
 #: templates/registration/password_reset_done.html:19
 msgid ""
 "If you don't receive an e-mail, please make sure you've entered the address "
 "you registered with, and check your spam folder."
 msgstr ""
+"もしメールが届かない場合、入力したメールアドレスが正しいかどうか、迷惑メール"
+"フォルダに振り分けられていないかどうかを確認して下さい。"
 
 #. Translators: This text appears on a button that takes the user back to the login page from the password reset page.
 #: templates/registration/password_reset_done.html:26
@@ -447,10 +457,14 @@ msgid ""
 "Someone asked for a password reset for the e-mail address %(email)s on the "
 "Tabbycat site at %(protocol)s://%(domain)s."
 msgstr ""
+"誰かがあなたのアカウント（メールアドレス：%(email)s）のパスワード再設定を、"
+"%(protocol)s://%(domain)s上のTabbycatサイトで試みたようです。"
 
 #: templates/registration/password_reset_email.html:10
 msgid "If this was you, follow the link below to reset your password:"
 msgstr ""
+"これがあなたによるものである場合、以下のURLにアクセスしパスワードリセットを"
+"お願いいたします："
 
 #: templates/registration/password_reset_email.html:13
 #, python-format
@@ -459,44 +473,49 @@ msgid ""
 "address into the password reset form on the Tabbycat site at %(protocol)s://"
 "%(domain)s."
 msgstr ""
+"このメールに心当たりがない場合、%(protocol)s://%(domain)s上のTabbycatサイトで"
+"誰かがあなたのメールアドレスをパスワードリセットのフォームに入力した可能性が"
+"あります。"
 
 #: templates/registration/password_reset_form.html:4
 #: templates/registration/password_reset_form.html:24
 msgctxt "page title"
 msgid "Password Reset"
-msgstr ""
+msgstr "パスワードリセット"
 
 #: templates/registration/password_reset_form.html:27
 msgid ""
 "Enter your e-mail address below, and we'll e-mail you a password reset link."
 msgstr ""
+"パスワードリセットページのURLをあなたのメールアドレスに送付します、"
+"メールアドレスを入力して下さい。"
 
 #: templates/registration/password_reset_form.html:34
 msgid "Please enter a valid e-mail address."
-msgstr ""
+msgstr "有効なメールアドレスを入力して下さい。"
 
 #: templates/registration/password_reset_form.html:39
 msgid "E-mail address"
-msgstr ""
+msgstr "メールアドレス"
 
 #: templates/registration/password_reset_form.html:50
 msgctxt "button"
 msgid "Reset my password"
-msgstr ""
+msgstr "パスワードをリセット"
 
 #: templates/registration/password_reset_form.html:53
 msgid "Back to the login page"
-msgstr ""
+msgstr "ログインページに戻る"
 
 #: templates/registration/password_reset_subject.txt:2
 #, python-format
 msgid "Password reset on Tabbycat site at %(domain)s"
-msgstr ""
+msgstr "%(domain)s上のTabbycatでパスワードリセット"
 
 #: urls.py:84
 #, python-format
 msgid "Later, %(username)s — you were logged out!"
-msgstr ""
+msgstr "さようなら、%(username)s！ログアウトしました！"
 
 #: urls.py:87
 msgid "Later! You were logged out!"
@@ -516,6 +535,8 @@ msgid ""
 "Users with Staff status can view and edit the Edit Database area. This is "
 "potentially dangerous and should be reserved for the actual Tab Director(s)."
 msgstr ""
+"スタッフ権限を持つユーザーはデータベースの閲覧と編集が可能です。安全のため、"
+"タブの管理者のみにこの権限を付与して下さい。"
 
 #: users/admin.py:22
 msgid ""
@@ -526,3 +547,8 @@ msgid ""
 "adjudication core are generally given Superuser status if they know what "
 "they are doing."
 msgstr ""
+"スーパーユーザーの権限をもつユーザーは大会運営に関するTabbycatの機能の全てに"
+"アクセスが可能になります。この権限を持たないユーザーであっても試合結果や"
+"フィードバック等の入力が可能ですが、ブレイクやジャッジの最終的なスコアに関する"
+"情報にはアクセスできません。Adjudication coreがTabbycat使い方を理解している"
+"場合、彼らにこの権限が付与しましょう。"
