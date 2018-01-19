@@ -24,7 +24,7 @@ msgstr "フィードバックフォーム"
 #: printing/templates/feedback_list.html:7
 #, python-format
 msgid "Printable Feedback Forms for %(round_name)s"
-msgstr "%(round_name)sの印刷可能なフィードバックフォーム"
+msgstr "%(round_name)sの印刷用フィードバックフォーム"
 
 #: printing/templates/feedback_list.html:14
 msgid ""
@@ -51,10 +51,9 @@ msgid ""
 "a> for information on how to add these (otherwise these forms will be quite "
 "bare)."
 msgstr ""
-"%(first_sentence)s Check the <a href=\"http://tabbycat.readthedocs.io/en/"
-"stable/features/adjudicator-feedback.html\" target=\"_blank\">documentation</"
-"a> for information on how to add these (otherwise these forms will be quite "
-"bare)."
+"%(first_sentence)s。質問の追加方法は<a href=\"http://tabbycat.readthedocs.io/"
+"en/stable/features/adjudicator-feedback.html\" target=\"_blank\">ドキュメント"
+"</a>を参照して下さい（さもないと空っぽなフォームになってしまいます）。"
 
 #: printing/templates/printables_list.html:9
 msgid ""
@@ -63,7 +62,9 @@ msgid ""
 "and turn on <strong>background graphics</strong>. Works best in Safari or "
 "Firefox."
 msgstr ""
-"印刷もしくはPDFの保存はCtrl+Pで行ってください。<strong>適切な向き</strong>で、<strong>ヘッダーフッターを除き</strong>、<strong>「背景をプリント」をオン</strong>にしてください。SafariとFirefoxでの印刷を推奨します。"
+"印刷もしくはPDFの保存はCtrl+P(Macでは⌘+P)で行ってください。<strong>適切な向き"
+"</strong>で、<strong>ヘッダーフッターを除き</strong>、<strong>「背景を"
+"プリント」をオン</strong>にしてください。SafariとFirefoxでの印刷を推奨します。"
 
 #: printing/templates/scoresheet_list.html:5
 msgid "Scoresheets"
@@ -72,7 +73,7 @@ msgstr "スコアシート"
 #: printing/templates/scoresheet_list.html:7
 #, python-format
 msgid "Printable Scoresheets for %(round_name)s"
-msgstr "%(round_name)sの印刷可能なスコアシート"
+msgstr "%(round_name)sの印刷用スコアシート"
 
 #: printing/views.py:121 printing/views.py:125
 msgid "Team"
