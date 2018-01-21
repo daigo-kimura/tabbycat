@@ -20,7 +20,7 @@ msgstr ""
 
 #: utils/forms.py:55
 msgid "E-mail address"
-msgstr "Eメールアドレス"
+msgstr "メールアドレス"
 
 #: utils/tables.py:38
 msgid "No Data Available"
@@ -302,7 +302,7 @@ msgstr "チーム同士の所属大学が同じです"
 
 #: utils/tables.py:723
 msgid "Conflicts/Flags"
-msgstr "コンフリクト/フラグ"
+msgstr "コンフリクト・フラグ"
 
 #: utils/tables.py:767 utils/tables.py:777
 msgid "Ballot"

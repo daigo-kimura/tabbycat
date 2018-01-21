@@ -12,7 +12,7 @@ msgstr ""
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,68 +20,68 @@ msgstr ""
 
 #: privateurls/admin.py:18 privateurls/views.py:77 privateurls/views.py:207
 msgid "Team"
-msgstr ""
+msgstr "チーム"
 
 #: privateurls/apps.py:7
 msgid "Private URL Management"
-msgstr ""
+msgstr "プライベートURL管理"
 
 #: privateurls/models.py:12
 msgid "ballot"
-msgstr ""
+msgstr "バロット"
 
 #: privateurls/models.py:13
 msgid "feedback"
-msgstr ""
+msgstr "フィードバック"
 
 #: privateurls/models.py:17
 msgid "recipient adjudicator"
-msgstr ""
+msgstr "受取ジャッジ"
 
 #: privateurls/models.py:19
 msgid "recipient speaker"
-msgstr ""
+msgstr "受取スピーカー"
 
 #: privateurls/models.py:22
 msgid "URL type"
-msgstr ""
+msgstr "URLタイプ"
 
 #: privateurls/models.py:24
 msgid "e-mail address"
-msgstr ""
+msgstr "メールアドレス"
 
 #: privateurls/models.py:25
 msgid "URL key"
-msgstr ""
+msgstr "URLキー"
 
 #: privateurls/models.py:27
 msgid "timestamp"
-msgstr ""
+msgstr "タイムスタンプ"
 
 #: privateurls/models.py:30
 msgid "private URL sent mail record"
-msgstr ""
+msgstr "プライベートURLメール送信記録"
 
 #: privateurls/models.py:31
 msgid "private URL sent mail records"
-msgstr ""
+msgstr "プライベートURLメール送信記録"
 
 #: privateurls/models.py:39
 msgid "<both adjudicator and speaker>"
-msgstr ""
+msgstr "ジャッジとスピーカー両方"
 
 #: privateurls/models.py:56
 msgid "No recipient (adjudicator or speaker) was specified."
-msgstr ""
+msgstr "受取ジャッジまたはスピーカーが選択されていません。"
 
 #: privateurls/models.py:59
 msgid "There was both a recipient adjudicator and a recipient speaker."
-msgstr ""
+msgstr "受取ジャッジとスピーカーが同時に選択されています。"
 
 #: privateurls/templates/ballot_urls_email_list.html:4
 #: privateurls/templates/ballot_urls_email_list.html:5
 msgid "Email Private Ballot URLs"
-msgstr ""
+msgstr "バロット提出用プライベートURLをメール"
 
 #: privateurls/templates/ballot_urls_email_list.html:13
 msgid ""
@@ -89,6 +89,8 @@ msgid ""
 "private ballot URL, then click the button at the bottom of the page to send "
 "the emails."
 msgstr ""
+"バロット提出用プライベートURLをメールで受け取るジャッジ一覧を確認し、この"
+"ページの下にあるボタンを押してメールを送信して下さい。"
 
 #: privateurls/templates/ballot_urls_email_list.html:19
 #: privateurls/templates/feedback_urls_email_list.html:27
@@ -97,6 +99,8 @@ msgid ""
 "The following adjudicators have a URL key but don't have an e-mail address, "
 "so won't get e-mails: %(adjudicators_list)s"
 msgstr ""
+"以下のジャッジはURLキーが生成されていますが、メールアドレスが登録されていない"
+"ためメールを受け取ることが出来ません：%(adjudicators_list)s"
 
 #: privateurls/templates/ballot_urls_email_list.html:29
 #, python-format
@@ -109,16 +113,22 @@ msgid_plural ""
 "are excluded from the below list. You can review the sent mail records in "
 "the <a href=\"%(sent_mail_records_url)s\">Edit Database area</a>."
 msgstr[0] ""
+"%(nadjs)s名のジャッジはバロット提出用プライベートURLを受け取っていますが、"
+"以下のリストに含まれていません。メール送信記録は<a href=\""
+"%(sent_mail_records_url)s\">データベース編集エリア</a>で確認できます。"
 msgstr[1] ""
+"%(nadjs)s名のジャッジはバロット提出用プライベートURLを受け取っていますが、"
+"以下のリストに含まれていません。メール送信記録は<a href=\""
+"%(sent_mail_records_url)s\">データベース編集エリア</a>で確認できます。"
 
 #: privateurls/templates/ballot_urls_email_list.html:43
 msgid "Send emails with private ballot URLs to adjudicators"
-msgstr ""
+msgstr "バロット提出用プライベートURLをジャッジにメールで送信"
 
 #: privateurls/templates/feedback_urls_email_list.html:4
 #: privateurls/templates/feedback_urls_email_list.html:5
 msgid "Email Private Feedback URLs"
-msgstr ""
+msgstr "フィードバック提出用プライベートURL"
 
 #: privateurls/templates/feedback_urls_email_list.html:13
 msgid ""
@@ -126,6 +136,8 @@ msgid ""
 "with their private feedback URL, then click the button at the bottom of the "
 "page to send the emails."
 msgstr ""
+"フィードバック提出用プライベートURLをメールで受け取るスピーカー一覧を確認し、"
+"このページの下にあるボタンを押してメールを送信して下さい。"
 
 #: privateurls/templates/feedback_urls_email_list.html:19
 #, python-format
@@ -133,20 +145,22 @@ msgid ""
 "The following speakers have a URL key but don't have an e-mail address, so "
 "won't get e-mails: %(speakers_list)s"
 msgstr ""
+"以下のスピーカーはURLキーが生成されていますが、メールアドレスが登録されて"
+"いないためメールを受け取ることが出来ません：%(speakers_list)s"
 
 #: privateurls/templates/feedback_urls_email_list.html:37
 #, python-format
 msgid "%(nspeakers)s speaker"
 msgid_plural "%(nspeakers)s speakers"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(nspeakers)s名のスピーカー"
+msgstr[1] "%(nspeakers)s名のスピーカー"
 
 #: privateurls/templates/feedback_urls_email_list.html:42
 #, python-format
 msgid "%(nadjs)s adjudicator"
 msgid_plural "%(nadjs)s adjudicators"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(nadjs)s名のジャッジ"
+msgstr[1] "%(nadjs)s名のジャッジ"
 
 #: privateurls/templates/feedback_urls_email_list.html:47
 #, python-format
@@ -156,16 +170,21 @@ msgid ""
 "the sent mail records in the <a href=\"%(sent_mail_records_url)s\">Edit "
 "Database area</a>."
 msgstr ""
+"%(speaker_phrase)sと%(adjudicator_phase)sはフィードバック提出用プライベート"
+"URLを受け取っていますが、以下のリストに含まれていません。メール送信記録は<a "
+"href=\"%(sent_mail_records_url)s\">データベース編集エリア</a>で確認できます。"
 
 #: privateurls/templates/feedback_urls_email_list.html:58
 msgid "Send emails with private feedback URLs to speakers and adjudicators"
-msgstr ""
+msgstr "フィードバック提出用プライベートURLをスピーカーとジャッジにメールで送信"
 
 #: privateurls/templates/private_urls.html:17
 msgid ""
 "The private URLs for ballot and/or feedback submission from participants are "
 "given below."
 msgstr ""
+"以下の参加者にバロットもしくはフィードバック提出用プライベートURLを送付"
+"しています。"
 
 #: privateurls/templates/private_urls.html:19
 msgid ""
@@ -175,6 +194,9 @@ msgid ""
 "publicly accessible page where <em>anyone</em> can enter <em>any</em> "
 "submission. The URLs will look something like this:"
 msgstr ""
+"プライベートURLは参加者にバロットやフィードバックを提出してもうために使用され"
+"ます。<em>誰にでも簡単に予測できる</em>ようなURLを作成しないために複雑なURLを"
+"生成します。URLはこのような文字列になります："
 
 #: privateurls/templates/private_urls.html:31
 msgid ""
@@ -184,6 +206,11 @@ msgid ""
 "<a href=\"http://tabbycat.readthedocs.io/en/latest/features/data-entry."
 "html#private-urls\"> Read more about private URLs.</a>"
 msgstr ""
+"URLさえ分かれば、そのURLに関連したデータ入力ページに誰でもアクセスできます。"
+"しかし、予測しづらいキー（ランダム文字列）を作成することで、このURLを受け取"
+"っていないチームやジャッジに、ページのアクセスを行わせないようにしています。"
+"<a href=\"http://tabbycat.readthedocs.io/en/latest/features/data-entry."
+"html#private-urls\">プライベートURLについて詳しく知る。</a>"
 
 #: privateurls/templates/private_urls.html:47
 #, python-format
@@ -194,28 +221,32 @@ msgid ""
 "settings accordingly on the <a href=\"%(data_entry_options_url)s"
 "\">tournament configuration page</a>."
 msgstr ""
+"プライベートURLを用いたオンラインでの<strong>バロット提出</strong>と<strong>"
+"フィードバック提出</strong>のどちらも有効になっていません。生成されたURLを"
+"利用するには<a href=\"%(data_entry_options_url)s\">大会設定ページ</a>で"
+"対応する設定を変更して下さい。"
 
 #: privateurls/templates/private_urls.html:67
 msgid "There are no private URLs assigned."
-msgstr ""
+msgstr "プライベートURLが割り当てられていません。"
 
 #: privateurls/templates/private_urls.html:73
 #: privateurls/templates/private_urls_nav.html:33
 #: privateurls/templates/private_urls_nav.html:40
 msgid "Generate Private URLs"
-msgstr ""
+msgstr "プライベートURLの生成"
 
 #: privateurls/templates/private_urls_nav.html:6
 msgid "View URLs"
-msgstr ""
+msgstr "URLを見る"
 
 #: privateurls/templates/private_urls_nav.html:11
 msgid "Print Feedback URLs"
-msgstr ""
+msgstr "フィードバック提出用URLを印刷"
 
 #: privateurls/templates/private_urls_nav.html:15
 msgid "Print Ballot URLs"
-msgstr ""
+msgstr "バロット提出用URLを印刷"
 
 #: privateurls/templates/private_urls_nav.html:21
 msgid "Email Feedback URLs"
